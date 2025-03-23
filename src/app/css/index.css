@@ -1,0 +1,611 @@
+
+
+
+/* ===== HeaderIndex ===== */
+.headerIndexWrapper {
+    margin: 0 30px;
+}
+
+.headerIndex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0 60px 0;
+}
+
+
+
+.headerIndexLogoWrapper {
+    padding: 10px;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+}
+
+.headerIndexLogo {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.headerIndexMenuElem {
+    margin: 0 20px;
+}
+
+.headerIndexButtonWrapper {
+    display: flex;
+}
+
+.headerIndexSignIn,
+.headerIndexReg {
+    padding: 10px 30px;
+    margin: 0 5px;
+
+    font-size: 16px;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    transition: .2s all;
+}
+
+.headerIndexReg {
+    border: 2px solid #92B7FF;
+    color: #92B7FF;
+}
+
+
+.headerIndexReg:hover,
+.headerIndexSignIn:hover {
+    opacity: .8;
+}
+
+.headerIndexSignIn:active {
+    opacity: .3;
+}
+
+.headerIndexReg:active {
+    background-color: #92B7FF;
+    color: #fff;
+}
+
+/* ===== sectionTitle ===== */
+.sectionTitle {
+}
+
+
+.sectionTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionTitleTextContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sectionTitleHeadline {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.sectionTitleDescriptionWrapper {
+    width: 60%;
+}
+
+.sectionTitleDescription {
+    font-size: 18px;
+}
+
+.sectionTitleGoTraning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 280px;
+    height: 50px;
+
+    font-size: 16px;
+    color: #fff;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    transition: .2s all;
+}
+
+.sectionTitleGoTraning:hover {
+    opacity: .8;
+}
+
+.sectionTitleGoTraning:active {
+    opacity: .3;
+}
+
+.sectionTitleForward {
+    width: 15px;
+    height: auto;
+}
+
+.sectionTitleMainImg {
+    width: 500px;
+    height: auto;
+}
+
+
+
+/* ==== SectionOffers ==== */
+
+.sectionOffersWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionOffersItem {
+    padding: 20px 30px;
+    
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    border-radius: 30px;
+}
+
+.sectionOffersHeadline {
+    margin: 0 0 50px 0;
+
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.sectionOffersDescriptionWrapper {
+    height: 70px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.sectionOffersDescription {
+    font-size: 16px;
+}
+
+/* ==== SectionAnotherSpecialties ==== */
+.sectionAnotherSpecialtiesWrapper {
+    margin-top: 70px;
+}
+
+.sectionAnotherSpecialtiesHeadline {
+    margin: 0;
+
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.sectionAnotherSpecialtiesItemsWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionAnotherSpecialties {
+    width: 70%;
+
+    display: flex;
+    flex-wrap: wrap; /* Перенос на новую строку */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 20px; /* Расстояние между элементами */
+
+    margin-top: 40px;
+}
+
+.sectionAnotherItemWrapper {
+    display: inline-block;
+
+    flex-shrink: 0; /* Запрещаем сжатие элементов */
+
+    padding: 20px 30px;
+
+    border: 1px solid #060606;
+    border-radius: 30px;
+}
+
+/* SectionPrice */
+.sectionPriseWrapper {
+    margin-top: 70px;
+}
+
+.sectionPriceItemAndButtonWrapper {
+    width: 300px;
+
+}
+
+.sectionPriceItem {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    padding: 8px;
+
+    background-color: #FFFFFF;
+
+    border-radius: 10px;
+}
+
+.sectionPriveHeadlineWrapper {
+    margin-bottom: 40px;
+}
+
+.sectionPriveHeadline {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.sectionPricePrices {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.sectionPriceHeader {
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+}
+
+.sectionPriveName,
+.sectionPriceNumber {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.sectionPriceNumber {
+    margin: 0;
+}
+
+.sectionPriveName {
+    margin: 10px 0 0 0;
+}
+
+.sectionPriceItempriceWrapper {
+    position: relative;
+
+    margin: 25px 0 0 10px;
+}
+
+.sectionPriceItemprice {
+    font-size: 45px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.sectionPriceMounth {
+    position: absolute;
+    top: 5px;
+
+    color: #D3D3D3;
+}
+
+.sectionPriceLine {
+    width: 100%;
+    height: 2px;
+
+    margin: 25px 0;
+
+    background-color: #F0F0F8;
+}
+
+.sectionPriceOffers {
+    display: flex;
+    align-items: center;
+
+    margin: 20px 0;
+}
+
+.sectionPriceOffersIcon {
+    width: 30px;
+    height: auto;
+
+    margin-right: 10px;
+}
+
+.sectionPriceMore {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 10px;
+    
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: 17px;
+}
+
+.sectionPriceMore:hover {
+    opacity: .8;
+}
+
+.sectionPriceMore:active {
+    opacity: .3;
+}
+
+/* ==== SectionReviews ==== */
+.sectionRewievsWrapper {
+    display: flex;
+    justify-content: center;
+
+    margin: 60px 0 0 0;
+
+}
+.sectionRewievs {
+    width: 800px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.sectionRewievsCarouselWrapper {
+    width: 600px;
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.sectionRewievsItemWrapper {
+    display: flex;
+
+    transition: .2s all;
+}
+
+.sectionRewievsItem {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.sectionRewievsHeader {
+    position: absolute;
+
+    top: -80px
+}
+
+.sectionRewievsAvatar {
+    width: 130px;
+    height: auto;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.sectionRewievsBody {
+    width: 600px;
+
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    border-radius: 20px;
+}
+
+.sectionRewievsHeadline {
+    margin-top: 20px;
+
+    font-size: 20px;
+}
+
+.sectionRewievsDescription {
+    margin: 10px 0 20px 0;
+
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.sectionRewievsStar {
+    width: 25px;
+    height: auto;
+}
+
+.sectionRewievsBack,
+.sectionRewievsGo {
+    width: 45px;
+    height: 45px;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #fff;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: .2s all;
+}
+
+.sectionRewievsBack:hover,
+.sectionRewievsGo:hover {
+    background-color: #E0E0E0;
+}
+
+.sectionRewievsBack:active,
+.sectionRewievsGo:active {
+    background-color: #92b7ff;
+}
+
+.sectionRewievsBack {
+    left: 0;
+}
+
+.sectionRewievsGo {
+    right: 0;
+}
+
+.sectionRewievsBtn {
+    width: 25px;
+    height: auto;
+}
+
+/* ==== FooterIndex ==== */
+
+.footerIndex {
+    padding: 40px;
+
+    background-color: #fff;
+}
+
+.footerIndexWrapper {
+    height: 250px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footerIndexLogoWrapper,
+.footerIndexHeadline {
+    height: 50px;
+
+    margin: 0 0 20px 0;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.footerIndexColumn1 {
+    width: 45%;
+    height: 280px;
+}
+
+.footerIndexLogo {
+    display: inline-block;
+
+    padding: 10px;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    background-color: #F0F0F8;
+
+    border-radius: 10px;
+}
+
+.footerIndexFondInovaciy {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+.footerIndexFondImg {
+    width: 150px;
+    height: auto;
+
+    margin-right: 15px;
+}
+
+.footerIndexFondText {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footerIndexDocsWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footerIndexDoc {
+    margin-top: 10px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+.footerIndexHeadline {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.footerIndexLists {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footerIndexListItem {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.footerIndexColumn2 {
+    width: 23%;
+    height: 280px;
+}
+
+.footerIndexColumn3 {
+    width: 32%;
+    height: 280px;
+}
+
+.footerIndexListsAndButton {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerIndexButton {
+    width: 250px;
+    height: 45px;
+
+    margin-top: 55px;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 15px;
+
+    transition: .2s all;
+}
+
+.footerIndexButton:hover {
+    opacity: .8;
+}
+
+.footerIndexButton:active {
+    opacity: .3;
+}

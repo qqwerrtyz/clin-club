@@ -1,0 +1,646 @@
+@media screen and (max-width: 1024px) {
+    .mobileVersion {
+        display: block ;
+    }
+    .desctopVersion {
+        display: none;
+    }
+
+    .desctopVersionFlex {
+        display: none;
+    }
+
+    .tabletsVersionBlock {
+        display: block;
+    }
+
+    .tabletsVersionNone {
+        display: none;
+    }
+
+    .tabletsVersionFlex {
+        display: flex;
+    }
+  
+    /* ===== HeaderIndex ===== */
+
+    .headerIndexWrapper {
+        margin: 0 10px;
+    }
+    .headerIndex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerIndexLogoWrapper {
+        margin: 0 30px 10px 30px;
+    }
+
+    .headerIndexLogo {
+        padding: 10px;
+
+        font-size: 16px;
+    }
+
+
+    .headerIndexMenuListsWrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .headerIndexMenuLists {
+        position: absolute;
+        top: -20px;
+        left: 0;
+
+        padding: 30px 30px 10px 30px;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+
+        border: 1px solid #F0F0F8;
+        border-radius: 15px;
+    }
+
+    .headerIndexCross {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .headerIndexMenuElem {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .headerIndexMenuAndButtons {
+        box-sizing: border-box;
+        width: 100%;
+
+
+        padding: 5px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #fff;
+
+        border-radius: 15px;
+
+    }
+
+    .headerIndexMenu {
+        width: 30px;
+        height: auto;
+    }
+
+   
+
+    .headerIndexSignIn,
+    .headerIndexReg {
+        padding: 7px 20px;
+
+        font-size: 16px;
+    }
+
+    /* SectionTitle */
+    .sectionTitleHeadline {
+        font-size: 30px;
+    }
+
+    .sectionTitleDescriptionWrapper {
+        width: 80%;
+    }
+
+    .sectionTitleDescription {
+        font-size: 15px;
+    }
+
+    .sectionTitleMainImg {
+        width: 250px;
+    }
+
+    .sectionTitleGoTraning {
+        width: 170px;
+        height: 40px;
+    }
+
+    .sectionTitleGoTraning {
+        font-size: 14px;
+    }
+
+    /* SectionOffers */ 
+    .sectionOffersItem {
+        padding: 15px 20px;
+
+        margin: 0 5px;
+    }
+
+    .sectionOffersHeadline {
+        font-size: 20px;
+
+        margin-bottom: 10px;
+    }
+
+    .sectionOffersDescriptionWrapper {
+        height: 50px;
+    }
+
+    .sectionOffersDescription {
+        font-size: 13px;
+    }
+
+    /* SectionAnotherSpecialties */
+    .sectionAnotherSpecialtiesHeadline {
+        font-size: 25px;
+    }
+
+    .sectionAnotherSpecialties {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sectionAnotherItemWrapper {
+        padding: 12px 20px;
+    }
+    
+    /* SectionPrice */
+
+    .sectionPriveHeadline {
+        font-size: 25px;
+    }
+
+    .sectionPriceNumber,
+    .sectionPriveName {
+        font-size: 17px;
+    }
+
+    .sectionPriceItemprice {
+        font-size: 35px;
+    }
+
+    .sectionPriceMounth {
+        font-size: 14px;
+    }
+
+    .sectionPriceLine {
+        margin: 15px 0;
+    }
+
+    .sectionPriceOffers {
+        margin: 10px;
+    }
+
+    .sectionPriceMore {
+        height: 45px;
+    }
+
+    /* SectionReviews */
+    .sectionRewievsCarouselWrapper {
+        width: 500px;
+    }
+
+    .sectionRewievsAvatar {
+        width: 100px;
+    }
+
+    .sectionRewievsBody {
+        width: 500px;
+        padding: 30px 10px;
+    }
+
+    .sectionRewievsDescription {
+        font-size: 16px;
+    }
+
+    /* ==== FooterIndex ==== */
+    .footerIndexColumn1,
+    .footerIndexColumn2,
+    .footerIndexColumn3 {
+        height: 0;
+    }
+
+    .footerIndexWrapper {
+        height: 220px;
+    }
+
+    .footerIndexLogo {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .footerIndexFondImg {
+        width: 70px;
+    }
+
+    .footerIndexFondText {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .footerIndexHeadline {
+        font-size: 20px;
+    }
+
+    .footerIndexLogoWrapper,
+    .footerIndexHeadline {
+        margin-bottom: 15px;
+    }
+
+
+    .footerIndexListItem {
+        padding-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .footerIndexButton {
+        width: 170px;
+        height: 40px;
+
+        margin-top: 45px;
+    }
+
+    .footerIndexFondInovaciy {
+        margin-bottom: 10px;
+    }
+
+    .footerIndexDoc {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .landingMargin {
+        margin: 0 15px;
+    }
+
+    .mobileVersion {
+        display: block ;
+    }
+    .desctopVersion {
+        display: none;
+    }
+
+    .desctopVersionFlex {
+        display: none;
+    }
+
+    
+
+    /* ===== HeaderIndex ===== */
+
+    .headerIndexWrapper {
+        margin: 0 10px;
+    }
+    .headerIndex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerIndexLogoWrapper {
+        margin: 0 30px 10px 30px;
+    }
+
+    .headerIndexLogo {
+        padding: 10px;
+
+        font-size: 14px;
+    }
+
+
+    .headerIndexMenuListsWrapper {
+        position: relative;
+        height: auto;
+    }
+
+    .headerIndexMenuLists {
+        position: absolute;
+        top: -20px;
+
+        padding: 20px 0 10px 0;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+
+        border: 1px solid #F0F0F8;
+        border-radius: 15px;
+    }
+
+    .headerIndexCross {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+
+        width: 25px;
+        height: 25px;
+    }
+
+    .headerIndexMenuElem {
+        padding-bottom: 15px;
+    }
+
+    .headerIndexMenuAndButtons {
+        box-sizing: border-box;
+        width: 100%;
+
+
+        padding: 5px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #fff;
+
+        border-radius: 15px;
+
+    }
+
+
+    .headerIndexButtonWrapper {
+    }
+
+    .headerIndexSignIn,
+    .headerIndexReg {
+        padding: 10px 15px;
+
+        font-size: 12px;
+    }
+
+    /* ===== sectionTitle ===== */
+    .sectionTitleWrapper {
+        flex-direction: column;
+    }
+   
+
+
+    .sectionTitleHeadline {
+        font-size: 30px;
+    }
+
+    .sectionTitleMainImgWrapper {
+        display: flex;
+        justify-content: flex-end;
+
+        margin: 20px 0 0 0;
+    }
+
+    .sectionTitleMainImg {
+        width: 80%;
+    }
+
+    .sectionTitleTextContent {
+        order: 1;
+    }
+    .sectionTitleMainImgWrapper {
+        order: 0;
+    }
+
+    .sectionTitleDescriptionWrapper {
+        width: 100%;
+
+        margin: 20px 0;
+    }
+
+    .sectionTitleDescription {
+
+        font-size: 15px;
+    }
+
+    .sectionTitleGoTraning {
+        width: 100%;
+    }
+
+    
+    /* ==== SectionOffers ==== */
+
+    .sectionOffers {
+        margin-top: 30px;
+        /* display: none; */
+        overflow: hidden;
+    }
+
+    .sectionOffersWrapper {
+        overflow:scroll;
+    }
+
+    .sectionOffersItem {
+        width: 300px;
+
+        margin-right: 15px;
+
+        flex-shrink: 0;
+    }
+
+    .sectionOffersHeadline {
+        margin-bottom: 10px;
+
+        font-size: 18px;
+    }
+
+    .sectionOffersDescriptionWrapper {
+        height: 40px;
+    }
+
+    .sectionOffersDescription {
+        font-size: 14px;
+    }
+
+    /* ==== SectionAnotherSpecialties ==== */
+    .sectionAnotherSpecialtiesHeadline {
+        font-size: 25px;
+    }
+
+    .sectionAnotherItemWrapper {
+        padding: 10px;
+    }
+
+    .sectionAnotherItem {
+        font-size: 14px;
+    }
+
+    /* ==== SectionPrice ==== */
+    .sectionPricePrices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionPriveHeadline {
+        font-size: 25px;
+    }
+
+    .sectionPriceItemAndButtonWrapper {
+        margin-bottom: 40px;
+    }
+
+    .sectionPriceNumber,
+    .sectionPriveName {
+        font-size: 16px;
+    }
+
+    .sectionPriveName {
+        margin-top: 5px;
+    }
+    
+    .sectionPriceItemprice {
+        margin-right: 5px;
+    }
+
+    .sectionPriceItempriceWrapper {
+        margin: 15px 0 0 10px;
+    }
+
+    .sectionPriceItemprice {
+        font-size: 35px;
+    }
+
+    .sectionPriceMounth {
+        font-size: 12px;
+    }
+
+    .sectionPriceLine {
+        margin: 15px 0;
+    }
+
+    .sectionPriceOffers {
+        margin: 10px 0;
+    }
+
+    .sectionPriceOffersIcon {
+        width: 25px;
+        height: auto;
+    }
+
+    .sectionPriceOfferItem {
+        font-size: 15px;
+    }
+
+    /* ==== SectionReviews ==== */
+    .sectionRewievsWrapper {
+        margin-top: -30px;
+    }
+
+    .sectionRewievsCarouselWrapper {
+        width: 250px;
+    }
+
+    .sectionRewievsBody {
+        width: 250px;
+
+        padding: 20px 15px;
+    }
+
+    .sectionRewievsDescription {
+        font-size: 16px;
+        line-height: 20px;
+
+        margin: 5px 10px;
+    }
+
+    .sectionRewievsHeader {
+        top: -60px;
+    }
+
+    .sectionRewievsAvatar {
+        width: 100px;
+    }
+
+    .sectionRewievsBack,
+    .sectionRewievsGo {
+        width: 30px;
+        height: 30px;
+
+        border: 10px;
+    }
+
+    /* ===== FooterIndex ===== */
+    .footerIndexWrapper {
+        flex-direction: column;
+    }
+    .footerIndex {
+        height: 360px;
+        
+        padding: 10px;
+    }
+
+    .footerIndexLogo {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .footerIndexColumn2Mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footerIndexColumn1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .footerIndexColumn2,
+    .footerIndexColumn3 {
+        width: 50%;
+        height: 170px;
+    }
+
+    .footerIndexFondInovaciy {
+        margin-bottom: 0;
+    }
+
+    .footerIndexFondImg {
+        width: 60px;
+    }
+
+    .footerIndexFondText {
+        font-size: 12px;
+        
+        line-height: 14px;
+    }
+
+    .footerIndexLogoWrapper, .footerIndexHeadline {
+        margin-bottom: 10px;
+    }
+
+    .footerIndexHeadline {
+        font-size: 20px;
+    }
+
+    .footerIndexListItem {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+
+    .footerIndexButton {
+        width: 100%;
+        height: 35px;
+
+        margin-top: 10px;
+
+        font-size: 14px;
+
+        border-radius: 10px;
+
+    }
+
+    .footerIndexDocsWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerIndexDoc {
+        margin: 0 0 10px 0;
+
+        font-size: 10px;
+    }
+
+}
+

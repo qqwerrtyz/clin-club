@@ -1,0 +1,76 @@
+/* ==== Header ==== */
+.headerWrapper {
+    width: 100%;
+
+    display: flex;
+
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerEmptyDiv,
+.headerLogoWrapper,
+.headerUserInfo {
+    width: 30%;
+    height: auto;
+}
+
+.headerLogoWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.headerLogo {
+    width: 130px;
+    height: auto;
+}
+
+.headerUserInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.headerSupportWrapper,
+.headerAvatarWrapper {
+    margin-left: 40px;
+    
+}
+
+.headerSupportWrapper,
+.headerTarifWrapper {
+    padding: 8px 20px;
+
+    font-size: 16px;
+    text-align: center;
+
+    transition: .2s;
+}
+
+.headerSupportWrapper:hover,
+.headerTarifWrapper:hover {
+    opacity: .3;
+}
+
+.headerSupportWrapper {
+    border: none;
+}
+.headerTarifWrapper {
+    border: 2px solid #92B7FF;
+    border-radius: 10px;
+}
+
+.headerAvatar {
+    width: 60px;
+    height: auto;
+}
