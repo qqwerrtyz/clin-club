@@ -85,3 +85,10 @@ body {
 .desctopVersionFlex {
   display: flex;
 }
+
+.divContainer {
+  padding: 25px;
+
+  border-radius: 15px;
+
+}

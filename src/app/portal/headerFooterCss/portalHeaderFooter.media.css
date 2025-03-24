@@ -1,0 +1,132 @@
+@media screen and (max-width: 1024px) {
+    .portalContent {
+        width: 100%;
+        margin: 0 20px;
+    }
+    /* ==== Header ==== */
+    .headerWrapper {
+        height: 7vh;
+    }
+    .headerEmptyDiv {
+        display: none;
+    }
+    .headerLogo {
+        width: 150px;
+    }
+
+    .headerSupportWrapper,
+    .headerTarifWrapper {
+        padding: 10px 25px;
+
+        font-size: 18px;
+    }
+
+    .headerAvatar {
+        width: 70px;
+    }
+
+    /* ==== Footer ==== */
+    .footerWrapper {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    
+        width: 50%;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .footerIcon {
+        width: 35px;
+    }
+
+    .iconChatWrapper {
+        position: fixed;
+        right: -100px;
+        bottom: 90px;
+    }
+
+    .iconChat {
+        width: 65px;
+    }
+
+    .footerLine {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .portalContent {
+        margin: 0 15px;
+    }
+    /* ==== Header ==== */
+    .headerWrapper {
+        height: 7vh;
+
+        padding: 10px;
+    }
+
+    .headerEmptyDiv,
+    .headerTarifWrapper,
+    .headerSupportWrapper {
+        display: none;
+    }
+    
+    .headerLogo {
+        width: 90px;
+    }
+
+    .headerAvatar {
+        width: 40px;
+    }
+
+    /* ==== Footer ==== */
+    .footerWrapper {
+        position: fixed;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    
+        width: 90%;
+        height: auto;
+
+        margin: 0;
+    }
+
+    .footerIcon {
+        width: 30px;
+    }
+
+    .iconChatWrapper {
+        position: fixed;
+        right: 10px;
+        bottom: 60px;
+    }
+
+    .iconChat {
+        width: 45px;
+    }
+
+    .footerLine {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,269 @@
+.indexPortal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* ==== indexPortalWelcomWrapper ==== */
+.indexPortalWelcomWrapper {
+    
+
+    position: relative;
+    width: 50%;
+
+    background-color: #fff;
+}
+.indexPortalHello {
+    font-size: 16px;
+}
+
+.indexPortalWelcom {
+    margin: 15px 0;
+
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.indexPortalWelcomInputWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.indexPortalWelcomInputWrapper:active {
+    opacity: .8;
+}
+
+.indexPortalIconTextWrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.indexPortalSearchIcon {
+    width: 30px;
+    height: auto;
+
+    margin-right: 10px;
+
+    font-size: 16px;
+}
+
+.indexPortalSelectThemeWrapper {
+    border-left: 1px solid #FEFEFE;
+}
+
+.indexPortalSeatchText,
+.indexPortalSelectTheme {
+    font-size: 16px;
+}
+
+.indexPortalSelectTheme {
+    padding-left: 20px;
+}
+
+
+.indexPortalDropDownThemsWrapper {
+    position: absolute;
+
+    margin-top: 10px;
+
+    width: 90%;
+
+    padding: 15px;
+
+    border-radius: 15px;
+}
+
+.indexPortalDropDownThems {
+    height: 250px;
+
+    border-radius: 15px;
+
+    overflow-y: scroll;
+}
+
+.indexPortalDropDownThems::-webkit-scrollbar {
+    width: 4px;
+}
+.indexPortalDropDownThems::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.indexPortalDropDownThems::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.indexPortalDropDownThems::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.indexPortalDropDownThems-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+.indexPortalDropDownItemWrapper {
+    width: 90%;
+
+    padding: 20px 20px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+
+    transition: .2s;
+
+}
+.indexPortalDropDownItemWrapper:hover {
+    opacity: .8;
+}
+
+.indexPortalDropDownItem {
+    font-size: 16px;
+}
+
+.indexPortalIconGoLeft {
+    width: 20px;
+    height: auto;
+}
+
+
+/* ==== MyModules ==== */
+.myModulesWrapper {
+    width: 40%;
+    
+
+    background-color: #fff;
+}
+
+.myModules {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myModulesHeadlineAndSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.myModulesHeadline {
+    font-size: 27px;
+}
+
+.myModulesSortWrapper {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    translate: .3s all;
+}
+
+.myModulesSortWrapper:active {
+    opacity: .3;
+}
+
+.myModulesSortText {
+    display: inline-block;
+
+    margin-right: 20px;
+
+    font-size: 16px;
+}
+
+.myModulesSortIcon {
+    width: 25px;
+    height: auto;
+}
+
+
+
+.myModulesCarousel {
+    display: flex;
+    height: 100%;
+
+    transition: .15s;
+}
+
+.myModulesCarouselAndGoLeft {
+    position: relative;
+}
+
+.myModulesCarouselWrapper {
+    width: 90%;
+
+    border-radius: 15px;
+
+    overflow-x: hidden;
+}
+
+
+
+.myModulesItem {
+    min-width: 170px;
+    min-height: 100%;
+
+    width: 170px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: 10px;
+    padding: 10px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.myModulesItemName {
+    font-size: 18px;
+}
+
+.myModulesItemAuthorWrapper {
+    margin: 12px 0;
+}
+
+.myModulesItemAuthor {
+    
+
+    font-size: 13px;
+}
+
+.myModulesItemProgress {
+    font-size: 30px;
+}
+
+.myModuleGoLeftWrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+
+.myModuleGoLeftWrapper:hover {
+    opacity: .3;
+}

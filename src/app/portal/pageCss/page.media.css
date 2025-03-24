@@ -1,0 +1,99 @@
+@media screen and (max-width: 1024px) {
+    /* ==== Welcome ==== */
+    .indexPortalWelcomWrapper {
+        width: 100%;
+    }
+
+    .indexPortalHello {
+        font-size: 22px;
+    }
+
+    .indexPortalWelcom {
+        font-size: 40px;
+    }
+
+    .indexPortalWelcomInputWrapper {
+        padding: 20px 30px;
+    }
+
+    .indexPortalSearchIcon {
+        width: 45px;
+    }
+
+    .indexPortalSeatchText,
+    .indexPortalSelectTheme {
+        font-size: 22px;
+    }
+
+    .indexPortalSelectTheme {
+        padding-left: 30px;
+    }
+
+    .indexPortalDropDownThemsWrapper {
+        width: 90%;
+    }
+
+    .indexPortalDropDownItem {
+        font-size: 22px;
+    }
+
+    .indexPortalIconGoLeft {
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ==== Welcome ==== */
+    .indexPortalWelcomWrapper {
+        width: 100%;
+
+        padding: 0;
+        margin-top: 40px;
+
+        background: none;
+    }
+
+    .indexPortalHello {
+        font-size: 16px;
+    }
+
+    .indexPortalWelcom {
+        margin: 20px 0;
+
+        font-size: 35px;
+    }
+
+    .indexPortalWelcomInputWrapper {
+        padding: 7px 10px;
+    }
+
+    .indexPortalSearchIcon {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    .indexPortalSeatchText,
+    .indexPortalSelectTheme {
+        font-size: 14px;
+    }
+
+    .indexPortalSelectTheme {
+        padding-left: 10px;
+    }
+
+    .indexPortalDropDownThemsWrapper {
+        width: 100%;
+    }
+
+    .indexPortalDropDownItemWrapper {
+        padding: 10px 15px;
+    }
+
+    .indexPortalDropDownItem {
+        font-size: 14px;
+    }
+
+    .indexPortalIconGoLeft {
+        width: 15px;
+    }
+}

@@ -1,10 +1,26 @@
+.portalBody {
+    width: 100%;
+    height: 85vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.portalContent {
+    width: 90%;
+
+    order: 1;
+
+    margin-right: 30px;
+}
+
 /* ==== Header ==== */
 .headerWrapper {
     width: 100%;
+    height: 10vh;
 
     display: flex;
 
-    padding: 20px;
 }
 
 .header {
@@ -39,6 +55,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    margin-right: 20px;
 }
 
 .headerSupportWrapper,
@@ -73,4 +91,58 @@
 .headerAvatar {
     width: 60px;
     height: auto;
+}
+
+
+
+/* Footer */
+.footerWrapper {
+    width: 5%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 20px;
+
+    border-radius: 20px;
+
+    background-color: #fff;
+}
+
+.footer {
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerIconWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footerIcon {
+    width: 30px;
+    height: auto;
+
+    transition: .2s all;
+}
+
+.iconChat {
+    width: 50px;
+}
+
+.footerIcon:hover {
+    opacity: .3;
+}
+
+.footerLine {
+    width: 70%;
+    height: 1px;
+
+    margin: 40px 0;
 }
