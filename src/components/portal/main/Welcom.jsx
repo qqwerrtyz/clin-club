@@ -24,6 +24,7 @@ export default function Welcome () {
 
             <h1 className="textColorBlack indexPortalWelcom">Добра пожаловать обратно</h1>
 
+
             <div 
                 ref={indexPortalWelcomInputWrapper}
                 className="blueBg indexPortalWelcomInputWrapper"

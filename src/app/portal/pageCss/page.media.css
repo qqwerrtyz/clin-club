@@ -13,6 +13,7 @@
     }
 
     .indexPortalWelcomInputWrapper {
+        margin: 0;
         padding: 20px 30px;
     }
 
@@ -38,11 +39,91 @@
     }
 
     .indexPortalIconGoLeft {
-        width: 25px;
+        width: 15px;
     }
+
+    /* ==== MyModules ==== */
+    .myModulesWrapper {
+        width: 55%;
+
+        margin-top: 20px;
+    }
+
+    .myModulesHeadlineAndSort {
+
+        margin-bottom: 15px;
+    }
+
+    .myModulesHeadline {
+        font-size: 30px;
+    }
+
+    .myModulesItemNameWrapper {
+        height: 50px;
+        overflow-y: scroll;
+    }
+
+    .myModulesItemName {
+        font-size: 22px;
+    }
+
+    /* ==== EveryDayPractic ==== */
+    .everyDayPracticWrapper {
+        width: 40%;
+
+        margin-top: 20px;
+    }
+
+    .everyDayPracticHeadline {
+        font-size: 30px;
+    }
+
+    .everyDayPracticDescription {
+        font-size: 16px;
+    }
+
+    .everyDayPracticButton {
+        font-size: 16px;
+    }
+
+    .everyDayPracticButton {
+        height: 50px;
+    }
+
+    /* ==== LeadersBoard ==== */
+    .leadersBoardWrapper {
+        width: 55%;
+    }
+
+    .leadersBoardHeadline {
+        font-size: 30px;
+    }
+
+    .leadersBoardPlace {
+        font-size: 18px;
+    }
+
+    .leadersBoardLeaderAvatar {
+        width: 80px;
+        margin: 0 15px;
+    }
+
+    .leadersBoardName {
+        font-size: 20px;
+    }
+    
+    .leadersBoardScore {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
+    .divContainer {
+        padding: 20px  15px;
+    }
+    
     /* ==== Welcome ==== */
     .indexPortalWelcomWrapper {
         width: 100%;
@@ -95,5 +176,103 @@
 
     .indexPortalIconGoLeft {
         width: 15px;
+    }
+
+    /* ===== MyModules ===== */
+    .myModulesHeadlineAndSort {
+        margin-bottom: 30px;
+    }
+    .myModulesWrapper {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .myModulesHeadline {
+        font-size: 22px;
+    }
+
+    .myModulesSortText {
+        display: none;
+    }
+
+    .myModulesSortIcon {
+        width: 20px;
+    }
+    
+    .myModulesSortDropDown {
+        width: none;
+    }
+
+    .myModuleGoRight,
+    .myModulesGoLeft {
+        width: 12px;
+        height: auto;
+    }
+
+    .myModulesItem {
+        min-width: 130px;
+        height: 170px;
+
+        align-items: center;
+    }
+
+    /* .myModulesItemAuthorWrapper, */
+    .myModulesItemNameWrapper{
+        height: 50px;
+        overflow-y: scroll;
+    }
+
+
+    .myModulesItemNameWrapper {
+        margin-top: 15px;
+    }
+
+    .myModulesItemName {
+        font-size: 20px;
+    }
+
+    /* === EveryDayPractic ==== */
+    .everyDayPracticWrapper {
+        width: 100%;
+
+        margin-top: 20px ;
+    }
+
+    .everyDayPracticHeadline {
+        font-size: 22px;
+    }
+
+    .everyDayPracticDescription {
+        font-size: 16px;
+    }
+
+    .everyDayPracticButton {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* ==== LeadersBoard ==== */
+    .leadersBoardWrapper {
+        width: 100%;
+    }
+
+    .leadersBoardHeadline {
+        font-size: 22px;
+    }
+
+    .leadersBoardPlace {
+        font-size: 12px;
+    }
+
+    .leadersBoardLeaderAvatar {
+        width: 50px;
+
+        margin: 0 10px;
+    }
+
+    .leadersBoardScore,
+    .leadersBoardName {
+        font-size: 16px;
     }
 }
