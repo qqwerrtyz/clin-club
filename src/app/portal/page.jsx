@@ -6,6 +6,7 @@ import "./pageCss/page.media.css"
 import MyModules from "@/components/portal/main/MyModules"
 import EveryDayPractic from "@/components/portal/main/EveryDayPractic"
 import LeadersBoard from "@/components/portal/main/LeadersBoard"
+import Calendar from "@/components/portal/main/Calendar"
 
 
 export default function Portal() {
@@ -16,6 +17,7 @@ export default function Portal() {
             <MyModules />
             <EveryDayPractic />
             <LeadersBoard />
+            <Calendar />
         </div>
     )
 }

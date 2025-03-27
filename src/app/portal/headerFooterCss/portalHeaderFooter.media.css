@@ -1,6 +1,11 @@
 @media screen and (max-width: 1024px) {
     .portalContent {
+
         margin: 0 20px;
+
+    }
+
+    .portalBody {
     }
     /* ==== Header ==== */
     .headerWrapper {

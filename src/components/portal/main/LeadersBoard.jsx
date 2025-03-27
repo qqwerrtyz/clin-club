@@ -27,6 +27,11 @@ export default function LeadersBoard() {
             score: 100
         },
 
+        {
+            avatar: "",
+            name: "Петрова А. И.",
+            score: 100
+        },
         
     ]
     return(

@@ -2,6 +2,8 @@
     /* ==== Welcome ==== */
     .indexPortalWelcomWrapper {
         width: 100%;
+
+        margin-top: 60px;
     }
 
     .indexPortalHello {
@@ -46,7 +48,7 @@
     .myModulesWrapper {
         width: 55%;
 
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .myModulesHeadlineAndSort {
@@ -71,7 +73,7 @@
     .everyDayPracticWrapper {
         width: 40%;
 
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .everyDayPracticHeadline {
@@ -92,7 +94,9 @@
 
     /* ==== LeadersBoard ==== */
     .leadersBoardWrapper {
-        width: 55%;
+        width: 48%;
+
+        margin-top: 60px;
     }
 
     .leadersBoardHeadline {
@@ -109,12 +113,19 @@
     }
 
     .leadersBoardName {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .leadersBoardScore {
         font-size: 16px;
         font-weight: 600;
+    }
+
+    /* calendar */
+    .calendar {
+        width: 48%;
+
+        margin-top: 60px;
     }
 
 }
@@ -271,8 +282,20 @@
         margin: 0 10px;
     }
 
+    .leadersBoardScoreWrapper {
+        width: 40%;
+    }
+
     .leadersBoardScore,
     .leadersBoardName {
         font-size: 16px;
+    }
+
+    /* calendar */
+
+    .calendar {
+        width: 100%;
+
+        margin-bottom: 70px;
     }
 }
