@@ -128,6 +128,165 @@
         margin-top: 60px;
     }
 
+    /* ==== TopicModule ==== */
+    .topicModuleItem {
+        height: 150px;
+    }
+
+    .topicModuleAuthor {
+        font-size: 25px;
+    }
+
+    .topicModuleJob {
+        font-size: 16px;
+    }
+
+    .topicModuleThemeName {
+        font-size: 22px;
+    }
+
+    .topicModuleButton {
+        height: 45px;
+    }
+
+    .topicModuleLearn {
+        font-size: 20px;
+    }
+    
+    /* ==== Preview ==== */
+    .preview {
+        flex-direction: column;
+    }
+
+    .previewDescriptionModule {
+        width: 100%;
+    }
+
+    .previewDescriptionHeadline {
+        font-size: 40px;
+    }
+
+    .previewDescription {
+        width: 90%;
+
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .previewDescriptionAuthor,
+    .previewDescriptionJob,   
+    .previewDescriptionTime {
+        font-size: 20px;
+    }
+
+
+    .previewHowPersonLearnGrayBg,
+    .previewHowPersonLearnAvatar {
+        width: 55px;
+    }
+
+    .previewHowPersonLearnCountLearn {
+        font-size: 16px;
+    }
+
+    .previewLearnThisModule {
+        font-size: 18px;
+    }
+
+    .previewOpenTaskButtonDesctopAndMobile {
+        display: none;
+    }
+
+    .previewOpenTaskButtonTablet {
+        display: block;
+
+        margin-top: 20px;
+    }
+
+    .previewTaskExampleWrapper {
+        width: 100%;
+
+        margin-bottom: 80px;
+    }
+
+    .previewTaskExampleHeadline {
+        text-align: left;
+    }
+
+    .previewTaskExampleTitle {
+        font-size: 20px;
+    }
+
+    .previewTaskExampleBody {
+        font-size: 18px;
+    }
+
+    /* ==== Task ==== */
+    .taskWrapper {
+        padding-bottom: 60px;
+    }
+
+    .taskQuestion {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .taskInspectionDataItem {
+        width: 48%;
+    }
+
+    .taskInspectionDataItemHeader {
+        height: 80px;
+    }
+
+    .taskInspectionDataHeadline {
+        font-size: 20px;
+    }
+
+    .taskForward {
+        width: 40px;
+    }
+
+    .taskInspectionDataItemBodyData {
+        font-size: 20px;
+    }
+
+
+    .questionHeadlineAndInput {
+        margin-bottom: 40px;
+    }
+
+    .questionsHeadline {
+        font-size: 35px;
+    }
+
+    .questionHeadlineWrapper {
+        margin-bottom: 20px;
+    }
+
+    .questionHeadline {
+        font-size: 25px;
+    }
+
+    .questionInputs {
+        height: 40vh;
+    }
+
+    .questionInput {
+        height: 70px;
+    }
+
+    .taskSendWrapper {
+        margin-top: 50px;
+    }
+
+    .taskSend {
+        width: 300px;
+        height: 60px;
+
+        font-size: 20px;
+    }
+        
 }
 
 @media screen and (max-width: 576px) {
@@ -299,5 +458,169 @@
 
         margin-bottom: 70px;
 
+    }
+
+    /* TopicModule */
+    .topicModuleHeadline {
+        font-size: 35px;
+    }
+    
+    .topicModuleItem {
+        flex-direction: column;
+        height: 40%;
+    }
+
+    .topicModuleAuthorAndJobWrapper,
+    .topicModuleThemeNameWrapper,
+    .topicModuleDateWrapper,
+    .topicModuleButton {
+        width: 100%;
+    }
+
+    .topicModuleThemeNameWrapper {
+    }
+
+    .topicModuleAuthor {
+        font-size: 20px;
+    }
+
+    .topicModuleJob {
+        font-size: 12px;
+    }
+
+    .topicModuleThemeName {
+        font-size: 16px;
+    }
+
+    .topicModuleDate {
+        font-size: 15px;
+    }
+
+    /* === Preview ===  */
+    .preview {
+        flex-direction: column;
+    }
+
+    .previewDescriptionModule {
+        width: 100%;
+    }
+
+    .previewDescription {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .previewDescriptionTimeAuthorJob {
+        margin: 30px 0;
+    }
+
+    .previewHowPersonLearnGrayBg,
+    .previewHowPersonLearnAvatar {
+        width: 40px;
+    }
+
+    .previewHowPersonLearnCountLearn {
+        font-size: 11px;
+    }
+
+    .previewLearnThisModule {
+        font-size: 14px;
+    }
+
+    .previewOpenTaskButton {
+        width: 100%;
+        height: 45px;
+    }
+
+    .previewTaskExampleWrapper {
+        width: 100%;
+
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .previewTaskExampleHeadline {
+        text-align: left;
+    }
+
+    .previewOpenTaskButtonDesctopAndMobile {
+        display: block;
+    }
+    .previewOpenTaskButtonTablet {
+        display: none;
+    }
+
+    /* ==== Task ==== */
+
+    .taskQuestionAndInspectionDataWrapper {
+        height: auto;
+        overflow: auto;
+    }
+
+    .taskQuestion {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .taskInspectionDataWrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .taskInspectionDataItem {
+        width: 100%;
+    }
+
+    .taskInspectionDataItemHeader {
+        height: 50px;
+    }
+
+    .taskInspectionDataHeadline {
+        font-size: 16px;
+    }
+
+    .taskForward {
+        width: 20px;
+        height: auto;
+    }
+
+    .questionHeadlineAndInput {
+        margin-bottom: 20px;
+    }
+
+
+    .questionsHeadline {
+        font-size: 22px;
+    }
+
+    .questionHeadline {
+        font-size: 14px;
+    }
+
+    .questionInputs {
+        height: auto;
+        overflow: auto;
+
+    }
+
+    .questionInput {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .questionsWrapper {
+        padding-bottom: 1px;
+    }
+
+    .taskSendWrapper {
+        margin-top: 20px;
+
+    }
+
+    .taskSend {
+        width: 150px;
+        height: 50px;
+
+        font-size: 16px;
     }
 }

@@ -527,3 +527,459 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* ==== TopicModule ==== */
+.topicModuleHeadline {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.topicModuleItemsWrapper {
+    height: 80vh;
+
+    padding-right: 10px;
+
+    overflow-y: scroll;
+
+}
+
+.topicModuleItemsWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.topicModuleItemsWrapper::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.topicModuleItemsWrapper::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.topicModuleItemsWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.topicModuleItemsWrapper-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+
+.topicModuleItem {
+    height: 100px;
+
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #fff;
+
+    transition: .2s all;
+}
+
+
+
+.topicModuleAuthorAndJobWrapper {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.topicModuleAuthor {
+    font-size: 25px;
+}
+
+.topicModuleJob {
+    margin-top: 5px;
+
+    font-size: 15px;
+}
+
+.topicModuleThemeNameWrapper {
+    width: 40%;
+    height: 50px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.topicModuleDate,
+.topicModuleThemeName {
+    font-size: 20px;
+}
+
+.topicModuleDateWrapper {
+    width: 10%;
+}
+
+.topicModuleButton {
+    width: 15%;
+    height: 40px;
+
+    border-radius: 15px;
+    border: none;
+
+    font-size: 18px;
+
+    transition: .3s all;
+
+}
+
+.topicModuleButton:hover {
+    opacity: .3;
+}
+
+/* ==== Preview ==== */
+
+.preview {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.previewDescriptionModule {
+    width: 50%;
+}
+
+.previewDescriptionHeadline {
+    margin-bottom: 20px;
+
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.previewDescription {
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+.previewDescriptionTimeAuthorJob {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px 0;
+}
+
+
+
+
+.previewDescriptionTime {
+    font-size: 16px;
+}
+
+.previewDescriptionAuthor,
+.previewDescriptionJob {
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-top: 10px;
+}
+
+
+.previewHowPersonLearnWrppaer {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.previewHowPersonLearnGrayBg,
+.previewHowPersonLearnAvatar {
+    width: 50px;
+    height: auto;
+
+    border: 2px solid #F0F0F8;
+    border-radius: 50%;
+}
+
+.previewHowPersonLearnGrayBgWrapper {
+    position: relative;
+}
+
+.previewHowPersonLearnCountLearn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-size: 14px;
+}
+
+.previewHowPersonLearnMargin {
+    margin-left: -20px;
+}
+
+.previewLearnThisModuleWrapper {
+    margin-left: 15px;
+}
+
+.previewLearnThisModule {
+    font-size: 16px;
+}
+
+.previewOpenTaskButton {
+    width: 250px;
+    height: 60px;
+
+    border: none;
+    border-radius: 15px;
+    
+    font-size: 18px;
+
+    transition: .3s all;
+}
+
+.previewOpenTaskButtonTablet {
+    display: none;
+}
+
+.previewOpenTaskButton:hover {
+    opacity: .3;
+}
+
+
+
+.previewTaskExampleWrapper {
+    width: 40%;
+
+}
+
+.previewTaskExampleHeadlineWrapper {
+    margin-bottom: 20px;
+}
+
+.previewTaskExampleHeadline {
+    font-weight: 300;
+    text-align: center;
+}
+
+.previewTaskExample {
+    background-color: #fff;
+}
+
+.previewTaskExampleContent {
+    margin-bottom: 20px;
+}
+
+.previewTaskExampleTitle {
+    font-size: 18px;
+}
+
+.previewTaskExampleBody {
+    margin-top: 10px;
+}
+
+.previewTaskExampleQuestions {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==== Task ==== */
+
+.taskQuestionAndInspectionDataWrapper {
+    height: 15vh;
+
+    overflow-y: scroll;
+
+}
+
+.taskQuestionAndInspectionDataWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.taskQuestionAndInspectionDataWrapper::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.taskQuestionAndInspectionDataWrapper::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.taskQuestionAndInspectionDataWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.taskQuestionAndInspectionDataWrapper-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+.taskQuestion {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.taskInspectionDataWrapper {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 20px 10px 20px 0;
+
+}
+
+.taskInspectionDataItem {
+    position: relative;
+
+    width: 30%;
+
+    margin-top: 20px;
+}
+
+.taskInspectionDataItemHeader {
+    cursor: pointer;
+    height: 65px;
+
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+}
+
+.taskForwardDisplay {
+    display: none;
+}
+
+.taskInspectionDataHeadline {
+    width: 100%;
+
+    font-size: 18px;
+    color: #92B7FF;
+}
+
+.taskInspectionDataItemBody {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 1000;
+
+    margin-top: 5px;
+
+    background-color: #fff;
+
+    border: 2px solid #F0F0F8;
+}
+
+.taskBodyDisplay {
+    display: none;
+}
+
+.taskInspectionDataItemBodyData {
+    font-size: 16px;
+}
+
+.questionsHeadline {
+    font-size: 25px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+}
+
+.questionInputs {
+    height: 30vh;
+
+    padding-right: 10px;
+
+    overflow-y: scroll;
+
+}
+
+
+.questionInputs::-webkit-scrollbar {
+    width: 4px;
+}
+.questionInputs::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.questionInputs::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.questionInputs::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.questionInputs-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+
+.questionHeadlineAndInput {
+    margin-bottom: 10px;
+}
+
+.questionInput {
+    width: 100%;
+    height: 50px;
+
+    padding-left: 20px;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    transition: .3s all;
+}
+
+.questionHeadlineWrapper {
+    margin-bottom: 5px;
+}
+.questionHeadline {
+    font-size: 17px;
+}
+
+
+.questionInput:focus,
+.questionInput:hover {
+    outline: 1px solid #92B7FF;
+}
+
+.taskSendWrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 30px;
+}
+
+.taskSend {
+    width: 200px;
+    height: 45px;
+
+    font-size: 16px;
+    
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+    transition: .3s all;
+}
+
+.taskSend:hover {
+    opacity: .3;
+}

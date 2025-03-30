@@ -14,7 +14,17 @@ export default function Welcome () {
         setIsOpenDropDown(prev => !prev);
     }
 
-    const thems = ["Педиатрия", "Неврология", "Госпитальное терапия", "Общая хирургия", "Биохимия", "Физиология"];
+    const thems = [
+        {
+            urlSlug: "pediatriya",
+            showText: "Педиатрия"
+        },
+
+        {
+            urlSlug: "obshaya-hirurgiya",
+            showText: "Общая хирургия"
+        },
+    ];
 
     return (
         <div className="divContainer indexPortalWelcomWrapper">
@@ -56,12 +66,12 @@ export default function Welcome () {
                         thems.map((item, index) => {
                             return (
                                 <Link 
-                                    href={"#"}
-                                    key={`${item}_${index}`}
+                                    href={`/portal/${item.urlSlug}`}
+                                    key={`${item.urlSlug}_${index}`}
                                     className="indexPortalDropDownLink"
                                 >
                                     <div className="indexPortalDropDownItemWrapper">
-                                        <span className="textColorBlack indexPortalDropDownItem">{item}</span>
+                                        <span className="textColorBlack indexPortalDropDownItem">{item.showText}</span>
                                         <Image className="indexPortalIconGoLeft" src={goLeft}/>
                                     </div>
                                 </Link>
