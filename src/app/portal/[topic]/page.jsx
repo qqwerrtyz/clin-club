@@ -19,22 +19,22 @@ export default function TopicModule({params}) {
                 },
 
                 {
-                    author: "Пидорасова Ю. К",
-                    job: "228 гор больница",
-                    themeName: "Залупкина тема",
+                    author: "Иванов Ю. К",
+                    job: "22 гор больница",
+                    themeName: "Тема тема тема тема",
                     datePublish: "11.23.2002"
                 },
 
                 {
-                    author: "Подпёздова Ю. К",
-                    job: "1488 гор больница",
+                    author: "Сидоров Ю. К",
+                    job: "88 гор больница",
                     themeName: "Тема которую лучdvdvше не поднимать",
                     datePublish: "01.11.2002"
                 },
 
                 {
-                    author: "Хуесосов Ю. К",
-                    job: "1337 гор больница",
+                    author: "Петро Ю. К",
+                    job: "13 гор больница",
                     themeName: "Не тема, а темка",
                     datePublish: "01.01.2002"
                 },
@@ -42,30 +42,11 @@ export default function TopicModule({params}) {
                 {
                     author: "Каширина Ю. К",
                     job: "7 гор больница",
-                    themeName: "Пупкина тема",
+                    themeName: "Очень щепетильная тема",
                     datePublish: "27.34.2002"
                 },
 
-                {
-                    author: "Пидорасова Ю. К",
-                    job: "228 гор больница",
-                    themeName: "Залупкина тема",
-                    datePublish: "11.23.2002"
-                },
-
-                {
-                    author: "Подпёздова Ю. К",
-                    job: "1488 гор больница",
-                    themeName: "Тема которую лучdvdvше не поднимать",
-                    datePublish: "01.11.2002"
-                },
-
-                {
-                    author: "Хуесосов Ю. К",
-                    job: "1337 гор больница",
-                    themeName: "Не тема, а темка",
-                    datePublish: "01.01.2002"
-                }
+                
             ]
             
         },
@@ -74,32 +55,39 @@ export default function TopicModule({params}) {
             topicName: "Общая хирургия",
             topics: [
                 {
-                    author: "Вжопудавалов Ю. К",
-                    job: "-10 гор больница",
-                    themeName: "Епты бля фантазия кончилась",
+                    author: "Каширина Ю. К",
+                    job: "7 гор больница",
+                    themeName: "Пупкина темsd sf  er berbererh erh re fbsrb srvgsrgа",
                     datePublish: "27.34.2002"
                 },
 
                 {
-                    author: "Наротпринималов Ю. К",
-                    job: "123 гор больница",
-                    themeName: "УААА тема хуема",
-                    datePublish: "10.20.1488"
+                    author: "Иванов Ю. К",
+                    job: "22 гор больница",
+                    themeName: "Тема тема тема тема",
+                    datePublish: "11.23.2002"
                 },
 
                 {
-                    author: "Необрезаный Ю. К",
-                    job: "1488 гор больница",
-                    themeName: "Тема которую лучше не поднимать",
+                    author: "Сидоров Ю. К",
+                    job: "88 гор больница",
+                    themeName: "Тема которую лучdvdvше не поднимать",
                     datePublish: "01.11.2002"
                 },
 
                 {
-                    author: "Заёбов Ю. К",
-                    job: "1337 гор больница",
+                    author: "Петро Ю. К",
+                    job: "13 гор больница",
                     themeName: "Не тема, а темка",
                     datePublish: "01.01.2002"
-                }
+                },
+
+                {
+                    author: "Каширина Ю. К",
+                    job: "7 гор больница",
+                    themeName: "Очень щепетильная тема",
+                    datePublish: "27.34.2002"
+                },
             ]
             
         },
