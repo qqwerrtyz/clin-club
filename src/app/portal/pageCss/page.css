@@ -983,3 +983,217 @@
 .taskSend:hover {
     opacity: .3;
 }
+
+/* ==== MyProfile ==== */
+.myProfileWrapper {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px 40px;
+    
+    background-color: #fff;
+
+    border-radius: 40px;
+}
+.myProfile {
+    /* height: 100%; */
+
+ 
+}
+/* HeaderProfile */
+.myProfileHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 40px;
+}
+
+.myProfileChange {
+    width: 150px;
+    height: 40px;
+
+    font-size: 16px;
+
+    border-radius: 10px;
+    border: none;
+
+    transition: .3s;
+}
+
+.myProfileChangePancel {
+    display: none;
+}
+
+.myProfileChange:hover {
+    opacity: .2;
+}
+
+.myProfileInfoAvatarWrapper {
+    margin-right: 20px;
+}
+
+.myProfileInfoAvatar {
+    width: 130px;
+    height: auto;
+}
+
+/* BodyProfile */
+/* AvatarAndPersonName */
+.myProfileBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myProfileCol {
+    width: 50%;
+}
+
+.myProfileInfoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.myProfileInfoNameBirthdateWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.myProfileInfoName {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+.myProfileInfoBirthdate {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.myProfileInfoTelGmailWrapperMobileV {
+    display: none;
+}
+
+.myProfileInfoTelWrapper,
+.myProfileInfoGmailWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.myProfileInfoTelGmailIcon {
+    margin-right: 10px;
+}
+
+.myProfileInfoTelGmail {
+    letter-spacing: 1px;
+}
+
+/* InfoCityUniverSpecial */
+
+.myProfileInfoPropWrapper {
+    margin-bottom: 10px;
+}
+
+.myProfileInfoProp {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* === FooterProfile === */
+.myProfileFooter {
+    display: flex;
+}
+
+/* Tarif */
+.myProfileTarifWrapper {
+    margin-top: 50px;
+    height: 40vh;
+}
+
+.myProfileTarif {
+    width: 80%;
+
+    padding: 30px;
+
+    border-radius: 20px;
+    border: 3px solid #BFD5FF;
+}
+
+.myProfileTarifHeadlineWrapper {
+    margin-bottom: 20px;
+}
+
+.myProfileTarifHeadline {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.myProfileTarifOffersWrapper {
+    padding-left: 25px;
+}
+
+
+.myProfileTarifOffer {
+    margin: 5px 0;
+
+    font-size: 16px;
+    
+}
+
+.myProfileTarifOffer::marker {
+    color: #BFD5FF;
+}
+
+/* BuyProVersion */
+.buyProVersionWrapper {
+    margin-top: 50px;
+}
+
+.buyProVersion {
+    width: 80%;
+
+    padding: 40px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F0F0F8;
+
+    border-radius: 20px;
+}
+
+.buyProVersionTextP {
+    font-size: 40px;
+}
+
+.buyProVersionTextSpan {
+    color: #92B7FF;
+}
+
+.upgradeStars {
+    width: 170px;
+    height: auto;
+}
+
+.buyProVersionPoliticsOfertaWrapper {
+    width: 80%;
+
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.buyProVersionPoliticsOferta {
+    font-size: 16px;
+    letter-spacing: 1px;
+}

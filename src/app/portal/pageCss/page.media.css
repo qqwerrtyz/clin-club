@@ -286,6 +286,72 @@
 
         font-size: 20px;
     }
+
+    /* ==== MyProfile ===== */
+    
+    .myProfileWrapper {
+        height: auto;
+    }
+
+    .myProfileChange {
+        font-size: 18px;
+    }
+
+    .myProfileTarifWrapper {
+        height: auto;
+    }
+
+    .myProfileInfoName {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .myProfileInfoProp,
+    .myProfileInfoTelGmail,
+    .myProfileInfoBirthdate {
+        font-size: 18px;
+    }
+
+    .myProfileTarif {
+        width: 90%;
+    }
+
+    .myProfileTarif {
+        padding: 15px;
+    }
+
+    .myProfileTarifHeadlineWrapper {
+        margin-bottom: 10px;
+    }
+
+    .myProfileTarifHeadline {
+        font-size: 25px;
+    }
+
+    .myProfileTarifOffer {
+        font-size: 18px;
+    }
+
+    .buyProVersion {
+        width: 100%;
+    }
+
+    .buyProVersionTextP {
+        font-size: 30px;
+    }
+
+    .buyProVersionPoliticsOfertaWrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .buyProVersionPoliticsOferta {
+        font-size: 15px;
+    }
+
+    .upgradeStars {
+        width: 220px;
+    }
         
 }
 
@@ -623,4 +689,158 @@
 
         font-size: 16px;
     }
+
+    /* ==== MyProfile ==== */
+    .myProfileInfoTelGmailWrapperDesctopV {
+        display: none;
+    }
+
+    .myProfileInfoTelGmailWrapperMobileV {
+        display: block;
+    }
+    .myProfile {
+        margin-bottom: 60px;
+    }
+
+    .myProfileWrapper {
+        height: auto;
+        background: none;
+        padding-bottom: 100px;
+
+        padding: 10px;
+    }
+
+    .myProfileHeader {
+        margin: 20px 0;
+    }
+
+    .myProfileHeadline {
+        font-size: 25px;
+    }
+
+    .myProfileChange {
+        display: none;
+    }
+
+    .myProfileBody {
+        flex-direction: column;
+    }
+
+    .myProfileChangePancel {
+        display: inline;
+
+        width: 20px;
+        height: auto;
+    }
+
+    .myProfileInfoAvatar {
+        width: 80px;
+        height: auto;
+    }
+
+    .myProfileInfoName {
+        margin-bottom: 5px;
+
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 0;
+    }
+
+    .myProfileInfoTelGmailWrapper {
+        margin-top: 40px;
+    }
+
+    .myProfileInfoTelWrapper {
+        margin-bottom: 10px;
+    }
+
+    .myProfileInfoTelGmail {
+        font-size: 16px;
+    }
+
+    .myProfileInfoTelGmailIcon {
+        width: 20px;
+        height: auto;
+
+        margin-right: 10px;
+    }
+
+    .myProfileInfoCityUnivercity {
+        margin-top: 40px;
+    }
+
+    .myProfileInfoPropWrapper {
+        margin-bottom: 10px;
+    }
+ 
+
+    .myProfileFooter {
+        flex-direction: column;
+    }
+
+    .myProfileCol {
+        width: 100%;
+    }
+
+    .myProfileTarifWrapper,
+    .buyProVersionWrapper {
+        margin-top: 40px;
+
+        height: auto;
+    }
+
+    .myProfileTarif {
+        width: 100%;
+
+        border: none;
+        background-color: #fff;
+        
+        padding: 10px 20px;
+    }
+
+    .myProfileTarifHeadlineWrapper {
+        margin: 10px 0;
+    }
+
+    .myProfileTarifHeadline {
+        font-size:  22px;
+    }
+
+    .myProfileTarifOffer {
+        font-size: 14px;
+    }
+
+
+    
+
+    .buyProVersionPoliticsOfertaWrapper {
+        margin-top: 20px;
+    }
+
+    .buyProVersion {
+        width: 100%;
+
+        padding: 30px;
+
+        background-color: #fff;
+    }
+
+    .buyProVersionTextP {
+        font-size: 25px;
+    }
+    .upgradeStars {
+        width: 100px;
+    }
+
+    .buyProVersionPoliticsOfertaWrapper {
+        flex-direction: column;
+
+    }
+
+    .buyProVersionPoliticsOferta {
+        margin: 10px 0;
+
+        letter-spacing: 0;
+    }
+   
 }
