@@ -352,6 +352,48 @@
     .upgradeStars {
         width: 220px;
     }
+
+    /* ===== Chat ===== */
+    .chat {
+        width: 100%;
+    }
+
+    .headerChatAvatar {
+        width: 55px;
+    }
+
+    .headerChatName {
+        font-size: 22px;
+    }
+
+    .bodyChat {
+        height: 65vh;
+    }
+
+    .bodyChatAvatar {
+        width: 50px;
+    }
+
+    .bodyChatItemWrapper {
+        margin-bottom: 30px;
+    }
+
+    .bodyChatMessageWrapper {
+        max-width: 70%;
+    }
+
+    .bodyChatMessage {
+        font-size: 18px;
+    }
+
+    .footerChat {
+        height: 80px;
+        max-height: 100px;
+    }
+
+    .footerChatTextarea {
+        font-size: 20px;
+    }
         
 }
 
@@ -841,6 +883,92 @@
         margin: 10px 0;
 
         letter-spacing: 0;
+    }
+
+    /* ==== Chat ==== */
+    .chat {
+        width: 100%;
+    }
+
+    
+
+    .headerChatWrapper {
+        border: none;
+    }
+
+    .headerChat {
+        width: 70%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 5px 15px;
+
+        
+        border: 2px solid #92b7ff;
+        border-radius: 15px;
+    }
+
+    .headerChatAvatar {
+        width: 30px;
+    }
+
+    .headerChatName {
+        font-size: 14px;
+    }
+
+    .bodyChat {
+        height: 60vh;
+    }
+
+    .bodyChatMessageWrapper {
+        max-width: 90%;
+        
+    }
+
+    .bodyChatMessageWrapper.meMessage {
+        margin-right: 10px;
+    }
+
+    .bodyChatAvatar {
+        width: 30px;
+        height: auto;
+    }
+
+    .bodyChatMessageWrapper {
+        padding: 10px;
+    }
+
+    .bodyChatMessage {
+        font-size: 14px;
+    }
+
+    .footerChat {
+        max-height: 80px;
+
+        padding: 10px;
+    }
+
+    .footerChatInputWrapper {
+        width: 60%;
+    }
+
+    .footerChatButtonsWrapper {
+        width: 35%;
+    }
+
+    .footerChatSIconPlus {
+        width: 20px;
+        height: auto;
+    }
+
+    .footerChatButtonSend {
+        width: 50px;
+        height: 35px;
+    }
+
+    .footerChatImgSendAir {
+        width: 20px;
     }
    
 }

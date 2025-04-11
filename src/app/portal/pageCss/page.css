@@ -1197,3 +1197,234 @@
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+/* ==== Chat ==== */
+
+.chatWrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.chat {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+}
+
+/* HeaderChat */
+.headerChatWrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    border-radius: 15px;
+    border: 2px solid #92B7FF;
+}
+
+.headerChat {
+    display: flex;
+    align-items: center;
+
+    padding: 5px 0;
+}
+
+.headerChatAvatar {
+    width: 50px;
+    height: auto;
+
+    margin-right: 20px;
+
+}
+
+.headerChatName {
+    font-size: 18px;
+    color: #92B7FF;
+}
+
+/* bodyChat */
+
+.bodyChatWrapper {
+    margin: 30px 0;
+}
+
+.bodyChatItemWrapper {
+    width: 100%;
+
+    /* background-color: red; */
+
+    margin-bottom: 20px;
+}
+
+.bodyChat {
+    height: 55vh;
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+
+    padding-right: 10px;
+}
+
+.bodyChat::-webkit-scrollbar {
+    width: 4px;
+}
+.bodyChat::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.bodyChat::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.bodyChat::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+
+
+.bodyChatMessageWrapper.meMessage {
+    margin-left: 0;
+    margin-right: 20px;
+    order: -1;
+}
+
+.bodyChatItem {
+
+    display: flex;
+}
+
+.chatMe {
+    display: flex;
+    flex-direction: row; /* Меняем направление flex */
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    /* background-color: red; */
+
+}
+
+.chatInterlocutor {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+}
+
+
+.bodyChatAvatar {
+    width: 40px;
+    height: auto;
+}
+
+.bodyChatMessageWrapper {
+    width: auto;
+    max-width: 40%;
+
+    margin-left: 20px;
+    padding: 15px 10px;
+
+    background-color: #fff;
+
+    border-radius: 10px;
+}
+
+/* FooterChat */
+
+.footerChat {
+    max-height: 100px;
+
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+}
+
+.footerChatInputWrapper {
+    width: 85%;
+
+}
+
+.footerChatTextarea {
+    width: 100%;
+    min-height: 20px;
+    max-height: 80px;
+
+    border: none;
+    outline: none;
+
+    resize: none;
+    overflow-y: none;
+}
+
+.footerChatTextarea::-webkit-scrollbar {
+    width: 4px;
+}
+.footerChatTextarea::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.footerChatTextarea::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.footerChatTextarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+
+.footerChatButtonsWrapper {
+    width: 15%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.footerChatSIconPlus {
+    width: 25px;
+    height: auto;
+
+    transition: .3s all;
+}
+
+.footerChatSIconPlus:hover {
+    opacity: .3;
+}
+
+.footerChatButtonSend {
+    width: 60px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    transition: .3s all;
+}
+
+.footerChatImgSendAir {
+    width: 25px;
+    height: auto;
+}
+
+.footerChatButtonSend:hover {
+    opacity: .3;
+}
