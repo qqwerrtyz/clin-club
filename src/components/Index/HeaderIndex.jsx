@@ -3,6 +3,7 @@ import menuIcon from "../../../public/imgs/landing/headerIndex/menu.png"
 import crossIcon from "../../../public/imgs/landing/headerIndex/cross.png"
 import Image from "next/image";
 import { useRef } from "react";
+import Link from "next/link";
 
 
 export default function HeaderIndex() {
@@ -37,14 +38,16 @@ export default function HeaderIndex() {
                 </div>
 
                 <div className="desctopVersion headerIndexMenu">
-                    <span className="headerIndexMenuElem"><a href="#">Тарифы</a></span>
-                    <span className="headerIndexMenuElem"><a href="#">Отзывы</a></span>
-                    <span className="headerIndexMenuElem"><a href="#">Поддержка</a></span>
+                    <span className="headerIndexMenuElem"><Link href="#sectionPrice">Тарифы</Link></span>
+                    <span className="headerIndexMenuElem"><Link href="#sectionRewievs">Отзывы</Link></span>
+                    <span className="headerIndexMenuElem"><a href="https://t.me/iliyamaksimovich">Поддержка</a></span>
                 </div>
 
                 <div className="desctopVersion headerIndexButtonWrapper">
-                    <button className="blueBg textColorWhite headerIndexSignIn">Войти</button>
-                    <button className="headerIndexReg">Регистрация</button>
+                    <Link style={{display: "flex", alignItems: "center"}} className="blueBg textColorWhite headerIndexSignIn" href={"/login"}>
+                        Войти
+                    </Link>
+                    <Link style={{display: "flex", alignItems: "center"}} className="headerIndexReg" href={"/reg"}>Регистрация</Link>
                 </div>
 
                 <div className="mobileVersion headerIndexMenuAndButtons">
@@ -64,9 +67,9 @@ export default function HeaderIndex() {
                                 ref={crossRef}
                                 onClick={openCLoseMenu}
                             />
-                            <span className="headerIndexMenuElem"><a href="#">Тарифы</a></span>
-                            <span className="headerIndexMenuElem"><a href="#">Отзывы</a></span>
-                            <span className="headerIndexMenuElem"><a href="#">Поддержка</a></span>
+                            <span className="headerIndexMenuElem"><Link href="#sectionPrice">Тарифы</Link></span>
+                            <span className="headerIndexMenuElem"><Link href="#sectionRewievs">Отзывы</Link></span>
+                            <span className="headerIndexMenuElem"><a href="https://t.me/iliyamaksimovich">Поддержка</a></span>
                         </div>
                     </div>
 

@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link";
 import { use, useEffect } from "react"
-import "../pageCss/page.css"
-import "../pageCss/page.media.css"
+import "@/app/portal/pageCss/page.css"
+import "@/app/portal/pageCss/page.media.css"
 
 export default function TopicModule({params}) {
     const { topic } = use(params);
@@ -124,7 +124,16 @@ export default function TopicModule({params}) {
                                     </div>
                                     
                                     <button type="button" className="blueBg topicModuleButton">
-                                        <Link href={"#"} className="textColorWhite topicModuleLearn">Решать</Link>
+                                        <Link
+                                            style={{
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                width: "100%",
+                                                height: "100%"
+                                            }}
+                                            href={`/portal/student/${topic}/preview`}
+                                            className="textColorWhite topicModuleLearn">Решать</Link>
                                     </button>
 
                                 </div>

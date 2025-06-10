@@ -1,5 +1,5 @@
-import "../pageCss/page.css"
-import "../pageCss/page.media.css"
+import "@/app/portal/pageCss/page.css"
+import "@/app/portal/pageCss/page.media.css"
 import HeaderProfile from "@/components/portal/myprofile/HeaderProfile"
 
 import BodyProfile from "@/components/portal/myprofile/BodyProfile"

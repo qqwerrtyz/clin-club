@@ -6,27 +6,25 @@ import SortAndDropDown from "./MyModules/SortAndDropDown";
 export default function MyModules() {
     
     return (
-        <div className="divContainer myModulesWrapper">
-            <div className="myModules">
+        <div className="divContainer myModules">
 
-                <div className="myModulesHeadlineAndSort">
-                    <div className="myModulesHeadlineWrapper">
-                        <span className="textColorBlack myModulesHeadline">Мои модули</span>
-                    </div>
-                    
-                    <SortAndDropDown />
-                    
-
-                    
+            <div className="myModulesHeadlineAndSort">
+                <div className="myModulesHeadlineWrapper">
+                    <span className="textColorBlack myModulesHeadline">Мои модули</span>
                 </div>
-
-                <div className="myModulesCarouselAndGoLeft">
-                    <MyModulesCarousel />
-                </div>
-
                 
+                <SortAndDropDown />
+                
+
                 
             </div>
+
+            <div className="myModulesCarouselAndGoLeft">
+                <MyModulesCarousel />
+            </div>
+
+            
+            
         </div>
     )
 }

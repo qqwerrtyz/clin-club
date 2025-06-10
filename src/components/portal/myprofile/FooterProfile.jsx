@@ -6,9 +6,10 @@ export default function FooterProfile() {
 
         <div className="myProfileFooter">
 
+
             <Tarif />
 
             <BuyProVersion />
         </div>
-    )
+    )   
 }

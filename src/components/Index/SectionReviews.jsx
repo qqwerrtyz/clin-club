@@ -43,7 +43,7 @@ export default function SectionReviews() {
     }, [offset])
 
     return(
-        <div className="sectionRewievsWrapper">
+        <div className="sectionRewievsWrapper" id="sectionRewievs">
             <div className="sectionRewievs">
                 <div className="sectionRewievsCarouselWrapper">
 

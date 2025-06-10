@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function PreviewTaskExampleWrapper() {
+export default function PreviewTaskExampleWrapper({topic}) {
     return (
         <div className="previewTaskExampleWrapper">
             <div className="previewTaskExampleHeadlineWrapper">
@@ -28,9 +28,7 @@ export default function PreviewTaskExampleWrapper() {
                     </div>
                 </div>
             </div>
-            <button className="blueBg previewOpenTaskButtonTablet previewOpenTaskButton">
-                <Link href={"#"} className="textColorWhite previewOpenTaskOpen">Открыть</Link>
-            </button>
+          
         </div>
 
     )

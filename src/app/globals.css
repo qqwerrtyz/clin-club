@@ -14,6 +14,14 @@
 
 }
 
+.showLaptopBlock {
+  display: block;
+}
+
+.showMobileBlock {
+  display: none;
+}
+
 .dNone {
   display: none;
 }
@@ -96,5 +104,41 @@ body {
 .mainHeadline {
   font-size: 40px;
   font-weight: 300;
+}
+
+.secondHeadline {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) { 
+  .secondHeadline {
+    font-size: 22px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .divContainer {
+    padding: 0;
+  }
+
+  .mainHeadline {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  
+  .secondHeadline {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .showMobileBlock {
+    display: block;
+  }
+
+  .showLaptopBlock {
+    display: none;
+  }
 }
 

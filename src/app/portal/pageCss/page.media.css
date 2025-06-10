@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1024px) {
     /* ==== Welcome ==== */
     .indexPortalWelcomWrapper {
@@ -123,9 +124,13 @@
 
     /* calendar */
     .calendar {
-        width: 48%;
 
         margin-top: 60px;
+    }
+
+    .calendarStudent {
+        width: 48%;
+
     }
 
     /* ==== TopicModule ==== */
@@ -332,6 +337,11 @@
         font-size: 18px;
     }
 
+    .statisticsCountMoudle,
+    .statisticsMoney {
+        font-size: 25px;
+    }
+
     .buyProVersion {
         width: 100%;
     }
@@ -354,16 +364,77 @@
     }
 
     /* ===== Chat ===== */
-    .chat {
-        width: 100%;
+
+/* 
+    .chats {
+        position: absolute;
+        z-index: 1000;
+        width: 90%;
+        border: none;
+        background-color: #F0F0F8;
     }
 
+    .chatsHeaderWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chatsCross {
+        display: inline;
+
+        width: 20px;
+        height: 20px;
+    }
+    .chatBurger {
+        display: inline;
+        position: absolute;
+        left: 25px;
+
+        width: 30px;
+        height: 27px;
+    } */
+
+
+    .chats {
+        width: 35%;
+    }
+
+    .chatsPeopleItemAvatar {
+        width: 35px;
+    }
+
+    .chatsPeopleItemName {
+        font-size: 16px;
+    }
+
+    .chatsPeopleItemTime {
+        font-size: 13px;
+    }
+
+    .chatsSearchInput {
+        font-size: 16px;
+    }
+
+    .chatsSearch {
+        width: 25px;
+    }
+
+    .chatsHeader {
+        font-size: 20px;
+    }
+    
+    .chat {
+        width: 60%;
+    }
+    
+
     .headerChatAvatar {
-        width: 55px;
+        width: 45px;
     }
 
     .headerChatName {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .bodyChat {
@@ -371,7 +442,7 @@
     }
 
     .bodyChatAvatar {
-        width: 50px;
+        width: 35px;
     }
 
     .bodyChatItemWrapper {
@@ -383,7 +454,7 @@
     }
 
     .bodyChatMessage {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .footerChat {
@@ -392,9 +463,445 @@
     }
 
     .footerChatTextarea {
+        font-size: 18px;
+    }
+
+    /* ===== Аналитика ===== */
+
+    .analytics {
+        flex-direction: column;
+    }
+
+    .analyticsColumn1 {
+        width: 100%;
+        height: 35%;
+
+
+        flex-direction: row;
+        align-items: center;
+
+        margin: 20px 0 0 0;
+    }
+
+    .analyticsColumn2 {
+        width: 100%;
+        height: 65%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 20px;
+    }
+
+   
+
+
+    
+
+     /* slovedModule */
+     .analyticsModule {
+        width: 48%;
+        height: 80%;
+
+        justify-content: flex-start;
+    }
+
+    .analyticsModuleHeader {
+        width: 85%;
+    }
+
+    .analyticsDiagramsWrapper {
+        margin-top: 10px;
+    }
+
+    .analyticsModuleName {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .analyticsIconDown {
+        width: 25px;
+        height: auto;
+    }
+
+    .analyticsDiagrams {
+        /* width: 90% !important;
+        height: 90% !important; */
+
+        margin-right: 20px;
+    }
+
+    .analyticsMetricsSeparateLine {
+        margin: 30px 0;
+    }
+
+    /* frequency */
+    .frequencyWrapper {
+        width: 48%;
+        height: 80%;
+
+        margin: 0;
+    }
+    /* AnalyticsTaskForWeek */
+    .analyticsTaskForWeekWrapper {
+        width: 60%;
+    }
+
+    /* ErrorTask */
+    .ErrorTask {
+        margin-top: 50px;
+        height: 60%;
+    }
+
+    .errorTaskList {
+        height: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .errorTaskItemIndexName  {
+        width: 70%;
+    }
+
+    .errorTaskName {
+        font-size: 30px;
+        max-height: 65px;
+    }
+
+    .errorTaskRating {
+        font-size: 26px;
+    }
+
+    .errorTaskButton {
+        width: 200px;
+        height: 55px;
+    }
+
+    .errorTaskFix,
+    .errorTaskError {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .errorTaskItemErrorButton {
+        width: 75%;
+        justify-content: flex-end;
+    }
+
+    .analyticsMetricName {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    /* =============================== */
+    /* =============================== */
+    /* =============================== */
+    /* ===== TEACHER VERSION!!! ====== */
+    /* =============================== */
+    /* =============================== */
+    /* =============================== */
+
+    .teacherModuleWrapper {
+        height: 40%;
+    }
+    .teacherMainPageColumn1 {
+        width: 100%;
+    }
+
+    .indexPortalHello {
+        font-size: 22px;
+    }
+
+    .teacherWelcomeBack {
+        height: 45%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .indexPortalWelcom {
+        font-size: 40px;
+    }
+
+    .teacherWelcomeBackCreateNewCase {
+        padding: 20px 30px;
+    }
+
+    .teacherWelcomeBackPlus {
+        width: 50px;
+        height: auto;
+    }
+
+    .teacherWelcomeBackCreateNewCaseText {
+        font-size: 30px;
+    }
+
+    .teacherMainPage {
+        flex-direction: column;
+    }
+
+    .teacherMainPageColumn2 {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+    }
+
+    .bestCaseWrapper {
+        margin-top: 60px;
+        height: 85%;
+    }
+
+    .bestCaseWrapper,
+    .calendarTeacherWrapper {
+        width: 45%;
+    }
+
+    /* ======= AddTask ======== */
+    .teacherAddTask {
+        padding-bottom: 70px;
+    }
+
+    .teacherAddTaskHeadlineWrapper {
+        margin-bottom: 20px;
+    }
+
+    .teacherAddTaskHeadline {
+        font-size: 30px;
+    }
+
+    .teacherTaskConditionsWrapper {
+        width: 100%; 
+    }
+
+    .teacherTaskCondition {
+        font-size: 20px;
+        height: 90px;
+    }
+
+    /* Additional COndtitions */
+    .minusCondition,
+    .plusCondition {
+        width: 30px;
+    }
+
+    .selectConditionItem {
+        font-size: 18px;
+    }
+
+    .additionalConditionsSelect {
+        align-items: center;
+    }
+
+    .plusAddTask {
+        width: 35px;
+    }
+
+    .selectConditionWrapper {
+        padding: 8px;
+    }
+
+    .additionalConditionsList {
+        width: 60%;
+    }
+
+    .additionalConditionsListItem {
+        font-size: 22px;
+    }
+
+    .additionalConditionsAddDescriptionWrppaer {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .additionalConditionsInputTextAndImage {
+        width: 70%;
+
+        padding: 10px 20px;
+    }
+
+    .additionalConditionsInputText {
         font-size: 20px;
     }
-        
+
+    /* Question Teacher */
+
+    .addQuestionsTeacherWrapper {
+        max-height: 400px;
+    }
+
+    .questionsTeacherInputs {
+        width: 70%;
+    }
+
+    /* ==== TeacherAnalytics ==== */
+
+    .teacherAnalytics {
+        justify-content: flex-start;
+
+        flex-direction: column;
+    }
+    .teacherAnalyticsColumn2,
+    .TeacherAnalyticsColumn1 {
+        width: 100%;
+        height: auto;
+
+        flex-direction: row;
+    }
+
+    .teacherAnalyticsColumn2 {
+        margin-top: 30px;
+    }
+    
+    /* Summary */
+    .summaryAnalytycsTeacherWrapper {
+        width: 43%;
+    }
+
+    .summaryAnalytycsTeacher {
+        width: 100%;
+    }
+
+    .summaryAnalytycsTeacherHeader {
+        flex-direction: column;
+
+        margin-bottom: 40px;
+    }   
+
+    .summaryAnalytycsTeacherHeadline {
+        font-size: 30px;
+
+        margin-bottom: 10px;
+    }
+
+    .summaryAnalytycsTeacherDate {
+        font-size: 20px;
+    }
+
+    .summaryAllDecidedNumber,
+    .summaryAllPostedNumber {
+        font-size: 70px;
+    }
+
+    .summaryAllPostedTitle,
+    .summaryAllDecidedTitle {
+        font-size: 18px;
+        text-align: center;
+    }
+    /* ==== DecideInWeekOrMonth ==== */
+    .decideInWeekOrMonthWrapper {
+        width: 50%;
+    }
+
+    .decideInWeekOrMonth {
+        width: 100%;
+        margin: 0;
+    }
+
+    .decideInWeekHeadline,
+    .decideInMonthHeadline {
+        font-size: 20px;
+    }
+
+    .decideInWeekOrMonthHeader {
+        margin-bottom: 15px;
+    }
+
+    .decideInWeekValue,
+    .decideInMonthValue {
+        font-size: 28px;
+    }
+    
+    /* ==== TeacherAnalitycsDiagram ==== */
+    .teacherAnalitycsDiagramWrapper {
+        width: 55%;
+    }
+    .analyticsTeacherDiagrams {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .analyticsTeacherMetricResult {
+        font-size: 50px;
+    }
+
+    .analyticsTeacherMetricName {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* ==== YourAskQuestions ==== */
+    .yourAskQuestionsWrapper {
+        width: 38%;
+        height: 100%;
+
+        padding: 0;
+    }
+
+    .yourAskQuestions {
+        height: 100%;
+
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .yourAskQuestionText {
+
+        margin-bottom: 20px;
+
+        font-size: 26px;
+    }
+
+    .noAskedQuestion {
+        margin-bottom: 20px;
+    }
+
+    .yourAskQuestionAsk {
+        width: 100%;
+    }
+
+    /* ==== ChangeProfile ==== */
+    .deleteAccount,
+    .saveChangeProfile {
+        padding: 15px;
+        font-size: 18px;
+
+        position: inherit;
+        transform: none;
+        width: 60%;
+    }
+
+    .changeProfileInputWrapper {
+        width: 60%;
+    }
+
+    .changeProfileInput {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    /* ==== add Module ==== */
+    .addModuleTaskInput {
+        width: 60%;
+    }
+
+    .addModuleTaskButtons {
+        width: 35%;
+    }
+
+    .addModuleTaskEdit,
+    .addModuleTaskDelete {
+        width: auto;
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -561,10 +1068,14 @@
     /* calendar */
 
     .calendar {
-        width: 100%;
         min-height: 350px;
 
         margin-bottom: 70px;
+
+    }
+
+    .calendarStudent {
+        width: 100%;
 
     }
 
@@ -852,6 +1363,16 @@
         font-size: 14px;
     }
 
+    .statisticsCountMoudle,
+    .statisticsMoney {
+        font-size: 25px;
+    }
+
+    .cashOut {
+        height: 45px;
+    }
+
+
 
     
 
@@ -977,4 +1498,582 @@
         width: 20px;
     }
    
+    /* ==== Analitycs ===== */
+
+    .analytics {
+        flex-direction: column;
+
+        padding-bottom: 70px;
+    }
+
+    .analyticsColumn1 {
+        flex-direction: column;
+    }
+
+    .analyticsColumn2,
+    .analyticsColumn1 {
+        width: 100% ;
+    }
+
+    .analyticsColumn2 {
+        margin-top: 40px;
+    }
+
+    .frequencyWrapper,
+    .analyticsModule {
+        width: 100%;
+    }
+
+    .frequencyWrapper {
+        margin-top: 40px;
+    }
+
+    .analyticsModuleHeader {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .analyticsModuleName {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+    
+    .analyticsIconDown {
+        width: 20px;
+        height: auto;
+    }
+
+    .analyticsDiagrams {
+        margin-right: 30px;
+    }
+
+    .analyticsSelectItem {
+        margin: 5px 0;
+        padding: 10px 15px;
+
+        font-size: 16px;
+
+    }
+
+    .analyticsSelectModule {
+        height: auto;
+    }
+
+    .analyticsSelectModuleWrapper {
+        min-height: 100%;
+    }
+
+    .analyticsMetricsSeparateLine {
+        margin: 30px 0;
+    }
+    
+    .analyticsMetricResult {
+        font-size: 55px;
+    }
+
+    .analyticsMetricName {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .analyticsTaskForWeekWrapper {
+        width: 100%;
+    }
+
+    .analyticsTaskDiagrams {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .analyticsTaskMetricsWrapper {
+        margin-left: 10px;
+    }
+
+    .analyticsTaskMetricResult {
+        font-size: 50px;
+    }
+
+    .analyticsTaskMetricName {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ErrorTask {
+        margin-top: 40px;
+    }
+
+    .errorTaskItem {
+        margin-top: 20px;
+    }
+
+    .errorTaskItemIndexName {
+        width: 75%;
+    }
+    .errorTaskItemErrorButton {
+        width: 50%;
+    }
+
+    .errorTaskButtonMobile {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .errorTaskRating {
+        font-size: 18px;
+    }
+
+    .errorTaskName {
+        display: block;
+        max-height: 46px;
+
+        overflow-y: auto;
+
+        font-size: 20px;
+    }
+
+    .errorTaskItemErrorButton {
+        padding-left: 10px;
+
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .errorTaskError {
+        margin: 0;
+    }
+
+
+    .errorTaskButton {
+        display: none;
+    }
+
+    .errorTaskFix {
+        font-size: 18px;
+    }
+
+    /* =============================== */
+    /* =============================== */
+    /* =============================== */
+    /* ===== TEACHER VERSION!!! ====== */
+    /* =============================== */
+    /* =============================== */
+    /* =============================== */
+    .teacherMainPage {
+        flex-direction: column;
+    }
+
+    .teacherMainPageColumn2,
+    .teacherMainPageColumn1 {
+        width: 100%;
+    }
+
+    .teacherMainPageColumn2 {
+        padding-bottom: 80px;
+        height: auto;
+
+    }
+
+    .teacherWelcomeBack {
+        background: none;
+    }
+
+    .teacherWelcomeBackHelloName {
+        font-size: 16px;
+    }
+
+    .teacherWelcomeBackText {
+        margin: 20px 0;
+        font-size: 30px;
+    }
+
+    .teacherWelcomeBackCreateNewCase {
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .teacherWelcomeBackPlus {
+        width: 30px;
+        height: auto;
+    }
+
+    .teacherWelcomeBackCreateNewCaseText {
+        font-size: 16px;
+    }
+
+
+    .bestCaseHeadline {
+        font-size: 25px;
+    }
+
+    .bestCaseValue,
+    .bestCaseName {
+        font-size: 25px;
+    }
+
+    .bestCaseSelebraty,
+    .bestCaseAuthor {
+        font-size: 14px;
+    }
+
+    /* ======= AddTask ======== */
+    .teacherAddTaskHeadlineWrapper {
+        margin-bottom: 10px;
+    }
+
+    .teacherAddTaskHeadline {
+        font-size: 30px;
+    }
+
+    .teacherTaskConditionsWrapper {
+        width: 100%;
+    }
+
+    .teacherTaskCondition {
+        font-size: 14px;
+        height: 60px;
+    }
+
+    .questionTeacherSave {
+        width: 100%;
+    }
+
+    /* ==== AdditionalConditions ==== */
+    .additionalConditionsSelect {
+
+
+        align-items: flex-start;
+
+        max-height: 200px;
+        overflow-y: auto;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .selectConditionBodyMinusWrapper {
+        width: 100%;
+    }
+
+    .selectConditionWrapper {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .minusCondition,
+    .plusCondition {
+        width: 20px;
+    }
+
+    .buttonAddConditionsLaptop {
+        display: none;
+    }
+
+    .buttonAddConditionsMobile {
+        display: block;
+    }
+
+    .additionalConditionsList {
+        width: 90%;
+        margin-top: 10px;
+
+        bottom: auto;
+        transform: none;
+    }
+
+    .additionalConditionsListWrapper {
+        display: none;
+    }
+
+    .additionalConditionsAddDescriptionWrppaer  {
+        width: 100%;
+
+
+        top: -10px;
+        bottom: auto;
+    }
+
+    .additionalConditionsInputTextAndImage {
+        width: 70%;
+
+        padding: 10px;
+
+        font-size: 16px;
+    }
+
+    .additionalConditionsInputImage {
+        width: 25px;
+        height: auto;
+    }
+
+    .additionalConditionsSaveDescription {
+        width: 30%;
+        height: 40px;
+        margin-left: 10px;
+
+        font-size: 14px;
+    }
+
+    .plusAddTaskWrapper {
+        width: 100%;
+    }
+    
+    /* Question teacher */
+    .questionsTeacherWrapper {
+    }
+
+    .questionTeacherHeader {
+        margin: 30px 0 0 0;
+    }
+
+    .addQuestionsTeacherWrapper {
+        max-height: 220px;
+    }
+
+    .questionTeacher {
+        flex-direction: column;
+    }
+
+    .questionsTeacherInputs {
+        width: 98%;
+    }
+
+    .questionsTeacherButtons {
+        margin: 10px 0 0 0;
+    }
+
+  
+
+    /* ==== TeacherAnalytics ==== */
+    .teacherAnalytics {
+        flex-direction: column;
+    }
+    .teacherAnalyticsColumn2,
+    .TeacherAnalyticsColumn1 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* Summary */
+
+    .summaryAnalytycsTeacherWrapper {
+        width: 100%;
+    }
+
+    .summaryAnalytycsTeacherHeader {
+        flex-direction: column;
+
+        margin-bottom: 20px;
+    }
+
+    .summaryAnalytycsTeacherHeadline {
+        order: 1;
+
+        margin-top: 10px;
+
+        font-size: 25px;
+    }
+    
+    .summaryAnalytycsTeacherDate {
+        order: -1;
+
+        font-size: 16px;
+    }
+
+    .summaryAllDecidedNumber,
+    .summaryAllPostedNumber {
+        margin-bottom: 5px;
+
+        font-size: 60px;
+    }
+
+    .summaryAllPostedTitle,
+    .summaryAllDecidedTitle {
+        font-size: 16px;
+    }
+
+    /* ==== DecideInWeekOrMonth ==== */
+    .decideInWeekOrMonthWrapper {
+        width: 100%;
+    }
+
+    .decideInWeek,
+    .decideInMonth {
+        padding-left: 20px;
+
+        text-align: left;
+    }
+
+    .decideInWeekHeadline,
+    .decideInMonthHeadline {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .decideInWeekValue,
+    .decideInMonthValue {
+        font-size: 50px;
+    }
+    
+    /* ==== TeacherAnalitycsDiagram ==== */
+
+    .analyticsTeacherDiagramsWrapper {
+        align-items: center;
+    }
+
+    .analyticsTeacherDiagrams {
+        width: 170px !important;
+        height: 170px !important;
+    }
+
+    .analyticsTeacherMetricResult {
+        font-size: 55px;
+    }
+
+    .analyticsTeacherMetricWrapper {
+        margin: 10px 0;
+    }
+
+    .analyticsTeacherMetricName {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* ==== yourAskQuestionsWrapper ==== */
+    .yourAskQuestions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .yourAskQuestionText {
+        font-size: 25px;
+
+        margin-bottom: 20px;
+    }
+
+    .noAskedQuestion {
+        margin-bottom: 25px;
+    }
+
+    .yourAskQuestionAsk {
+        width: 100%;
+    }
+
+    .yourAskQuestionsWrapper {
+        padding-bottom: 70px;
+    }
+
+    /* ==== ChangeProfile ==== */
+
+
+    .changeProfileWrapper {
+        padding-bottom: 60px;
+    }
+
+    .changeProfile {
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+    .changeProfile::-webkit-scrollbar {
+    width: 4px;
+    }
+    .changeProfile::-webkit-scrollbar-track {
+        background: #BFD5FF; /* Цвет фона трека */
+        border-radius: 4px;
+    }
+
+    .changeProfile::-webkit-scrollbar-thumb {
+        background: #fff; /* Цвет фона трека */
+        border-radius: 4px;
+    }
+
+    .changeProfile::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Цвет при наведении */
+    }
+
+    .changeProfile-scroll {
+        scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+        scrollbar-color: #fff #BFD5FF; /* thumb track */
+    }
+
+    .changeProfileInputWrapper {
+        width: 100%;
+    }
+
+    .deleteAccount,
+    .saveChangeProfile {
+        width: 100%;
+        height: 55px;
+
+        font-size: 18px;
+    }
+
+    .saveChangeProfile {
+        position: inherit;
+        transform: none;
+    }
+
+    /* ==== News ==== */
+    .newsItemText {
+        font-size: 20px;
+    }
+
+    /* ==== AddModule ==== */
+    .addModuleInput {
+        height: 60px;
+    }
+
+    .addModuleName {
+        font-size: 30px;
+    }
+
+    .addModuleDescription {
+        font-size: 25px;
+    }
+
+    .addModuleTime {
+        font-size: 20px;
+    }
+
+    .addModuleTaskInput {
+        width: 100%;
+    }
+
+
+    .addModuleTasksList {
+        height: 200px;
+    }
+
+    .addModuleTaskWrapper {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .addModuleTaskButtons {
+        width: 100%;
+
+        margin-top: 5px;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .addModuleTaskEdit,
+    .addModuleTaskDelete {
+        width: 45%;
+        
+        text-align: center;
+
+        font-size: 16px;
+    }
+
+    .addModulePublish,
+    .addModuleNotPublish,
+    .addModuleAddTask {
+        width: 150px;
+    }
+
 }

@@ -1,6 +1,7 @@
 import sectionTitleMainImg from "../../../public/imgs/landing/sectionTitle/sectionTitleMainImg.png"
 import forward from "../../../public/imgs/landing/sectionTitle/forward.png"
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function SectionTitle() {
@@ -28,9 +29,9 @@ export default function SectionTitle() {
               </div>
               {/* === sectionTitleDescriptionWrapper === */}
 
-              <button className="blueBg textColorWhite sectionTitleGoTraning">
+              <Link href={"/login"} className="blueBg textColorWhite sectionTitleGoTraning">
                 Начать обучение <Image src={forward} className="sectionTitleForward"/>
-              </button>
+              </Link>
 
             </div>
             {/* === sectionTitleTextContent === */}

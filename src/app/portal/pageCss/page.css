@@ -1,9 +1,39 @@
 .indexPortal {
+
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/* Back */
+.backWrapper {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    transition: .3s all;
+}
+
+.backWrapper:hover {
+    opacity: .3;
+}
+
+.backImage {
+    width: 20px;
+    height: auto;
+}
+
+
 /* ==== indexPortalWelcomWrapper ==== */
+.welcomComponentWrapper {
+    width: 50%;
+    height: 40%;
+}
+
 .indexPortalWelcomWrapper {
     
 
@@ -14,7 +44,11 @@
     flex-direction: column;
     justify-content: space-between; */
 
+}
+
+.indexPortalWelcom {
     background-color: #fff;
+
 }
 .indexPortalHello {
     font-size: 16px;
@@ -50,11 +84,19 @@
 
 }
 
+.indexPortalSelectThemeWrapper,
+.indexPortalSeatchTextWrapper {
+    display: flex;
+    align-items: center;
+}
+
 
 
 .indexPortalSearchIcon {
     width: 30px;
     height: auto;
+
+
 
     margin-right: 10px;
 
@@ -155,9 +197,7 @@
 }
 .myModulesWrapper {
     width: 40%;
-    
 
-    background-color: #fff;
 }
 
 .myModules {
@@ -166,6 +206,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-color: #fff;
+
 }
 
 .myModulesHeadlineAndSort {
@@ -280,7 +323,7 @@
 
 .myModulesItemNameWrapper {
     height: 50px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .myModulesItemNameWrapper::-webkit-scrollbar{
@@ -438,11 +481,15 @@
 
 /* ==== Calendar ==== */
 
+.calendarStudent {
+    width: 30%;
+    margin-top: 20px;
+}
 
 .calendar {
-    width: 30%;
+    /* width: 30%; */
 
-    margin-top: 20px;
+    /* margin-top: 20px; */
     
     background-color: #fff;
 }
@@ -460,6 +507,8 @@
 
 .calendarHeadline {
     margin: 0;
+
+    font-size: 20px;
 
     font-weight: 300;
     text-transform: capitalize;
@@ -486,6 +535,7 @@
 }
 
 .dayName {
+    font-size: 14px;
     text-align: center;
     font-weight: bold;
     padding: 10px;
@@ -514,7 +564,7 @@
 .day {
     position: relative;
     text-align: center;
-    padding: 10px;
+    padding: 6px;
     font-size: 16px;
 }
 
@@ -1152,6 +1202,32 @@
     color: #BFD5FF;
 }
 
+.statisticsCountMoudle {
+    font-size: 30px;
+}
+
+.statisticsMoney {
+    font-size: 30px;
+    color: #92B7FF;
+}
+
+.cashOut {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 15px;
+
+    font-size: 18px;
+    color: #fff;
+
+    border: none;
+    outline: none;
+    border-radius: 15px;
+
+    background-color: #92B7FF;
+}
+
+
 /* BuyProVersion */
 .buyProVersionWrapper {
     margin-top: 50px;
@@ -1204,11 +1280,125 @@
     width: 100%;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
+.chats {
+    width: 30%;
+
+    background-color: #fff;
+}
+
+.chatsHeaderWrapper {
+    margin-bottom: 15px;
+}
+
+.chatsHeader {
+    font-size: 22px;
+}
+
+.chatsCross {
+    display: none;
+}
+
+.chatsSearchWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0;
+
+    border-radius: 15px;
+
+    background-color: #92B7FF;
+}
+
+.chatsSearchInputWrapper {
+    width: 80%;
+
+    padding-left: 10px;
+}
+
+.chatsSearchInput {
+    width: 100%;
+
+    color: #fff;
+    font-size: 18px;
+
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.chatsSearch {
+    width: 30px;
+    height: auto;
+
+    margin-right: 10px;
+}
+
+.chatsPeopleWrapper {
+    height: 430px;
+    overflow-y: auto;
+}
+
+.chatsPeopleWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.chatsPeopleWrapper::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.chatsPeopleWrapper::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.chatsPeopleWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.chatsPeopleItem {
+    cursor: pointer;
+
+    margin-top: 10px;
+    padding: 5px 0;
+
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.chatsPeopleItem:hover {
+    background-color: #F0F0F8;
+}
+
+.chatsPeopleItemName {
+    font-size: 18px;
+    color: #92B7FF;
+}
+
+.chatsPeopleItemAvatar {
+    width: 50px;
+    height: auto;
+}
+
+.chatsPeopleItemTime {
+    font-size: 14px;
+    color: #92B7FF;
+}
+
+
+
+
+
+
 .chat {
-    width: 70%;
+    width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -1225,6 +1415,10 @@
 
     border-radius: 15px;
     border: 2px solid #92B7FF;
+}
+
+.chatBurger {
+    display: none;
 }
 
 .headerChat {
@@ -1427,4 +1621,1567 @@
 
 .footerChatButtonSend:hover {
     opacity: .3;
+}
+
+/* ==== Analytics ==== */
+.analytics {
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.analyticsColumn1 {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.analyticsColumn2 {
+    width: 50%;
+    height: 100%;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.analyticsModule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 50%;
+
+    position: relative;
+
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.analyticsModuleHeader {
+    width: 70%;
+
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #92B7FF;
+    border-radius: 15px;
+
+}
+
+.analyticsModuleName {
+    margin-right: 25px;
+
+    font-size: 22px;
+    color: #92B7FF;
+}
+
+.analyticsDiagramsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.analyticsDiagrams {
+    width: 200px !important;
+    height: 200px !important;
+
+    margin-right: 40px;
+}
+
+.analyticsMetricWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analyticsMetricResult {
+    font-size: 45px;
+}
+
+.analyticsMetricsSeparateLine {
+    margin: 60px 0;
+}
+
+.analyticsMetricName {
+    font-size: 18px;
+}
+
+.analyticsSelectModuleWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: auto;
+    background-color: #fff;
+
+    border-radius: 15px;
+
+}
+
+.analyticsSelectModule {
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+
+    padding: 0 30px;
+
+
+}
+
+.analyticsSelectModule::-webkit-scrollbar {
+    width: 2px;
+}
+.analyticsSelectModule::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.analyticsSelectModule::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.analyticsSelectModule::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.analyticsSelectModule {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+
+.analyticsSelectItemWrapper {
+    
+}
+
+.analyticsSelectItem {
+    display: inline-block;
+    
+    cursor: pointer;
+
+    padding: 15px 20px;
+
+    margin: 10px 0;
+
+    font-size: 20px;
+    color: #92B7FF;
+
+    border: 2px solid #92B7FF;
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.analyticsSelectItem:hover {
+    color: #fff;
+    background-color: #92B7FF;
+}
+
+.analyticsSelectItemSelect {
+    color: #fff;
+    background-color: #92B7FF;
+}
+
+/* AnalyticsFrequency */
+.frequencyWrapper {
+    height: 45%;
+
+    margin-top: 40px;
+}
+.frequency {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.frequencyHeader {
+    margin-bottom: 20px;
+}
+
+.frequencyHeadline {
+    font-size: 30px;
+}
+
+.frequencyDiagramWrapper {
+    
+
+    width: 100%;
+}
+
+.frequencyDiagram {
+
+    width: 100% !important;
+    height: 180px !important;
+}
+
+.analyticsWrapper {
+    /* width: ; */
+    height: 100%;
+}
+
+/* ====== AnalyticsTaskForWeek ====== */
+.analyticsTaskDiagramsWrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.analyticsTaskDiagrams {
+    width: 230px !important;
+    height: 230px !important;
+}
+
+
+.analyticsTaskMetricsWrapper {
+    height: 20%;
+}
+
+.analyticsTaskMetricsSeparateLine {
+    margin: 30px 0;
+}
+
+
+.analyticsTaskMetricWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analyticsTaskMetricResult {
+    font-size: 60px;
+}
+
+.analyticsTaskMetricName {
+    margin-top: 5px;
+
+    font-size: 20px;
+}
+
+/* ===== ErrorTask ==== */
+
+.ErrorTask {
+    margin-top: 20px;
+}
+
+.errorTaskList {
+    margin-top: 20px;
+}
+
+.errorTaskItemContainerDesctop {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.errorTaskItemIndexName {
+    display: flex;
+    align-items: center;
+
+    width: 55%;
+}
+
+.errorTaskRating {
+    margin-right: 20px;
+
+    font-size: 22px;
+}
+
+.errorTaskName {
+    display: block;
+    max-height: 55px;
+    overflow-y: auto;
+
+    font-size: 25px;
+}
+
+.errorTaskName::-webkit-scrollbar {
+    width: 4px;
+}
+.errorTaskName::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.errorTaskName::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.errorTaskName::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.errorTaskItemErrorButton {
+    display: flex;
+    align-items: center;
+}
+
+.errorTaskError {
+    margin: 0 15px;
+
+    font-size: 14px;
+    color: #F27DC3;
+}
+
+.errorTaskButtonMobile,
+.errorTaskButton {
+    width: 150px;
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #92B7FF;
+
+    transition: .3s all;
+}
+
+.errorTaskButtonMobile {
+    display: none;
+}
+
+.errorTaskButton:hover {
+    opacity: .5;
+}
+
+.errorTaskFix {
+    font-size: 16px;
+    color: #fff
+}
+
+/* =============================== */
+/* =============================== */
+/* =============================== */
+/* ===== TEACHER VERSION!!! ====== */
+/* =============================== */
+/* =============================== */
+/* =============================== */
+
+.teacherMainPage {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.teacherMainPageColumn1 {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* teacherWelcomeBack */
+
+.teacherWelcomeBack {
+    width: 100%;
+    height: 50%;
+
+    background-color: #fff;
+}
+
+.teacherWelcomeBackHello {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.teacherWelcomeBackHelloName {
+    font-size: 16px;
+    color: black;
+}
+
+.teacherWelcomeBackText {
+    font-size: 40px;
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.teacherWelcomeBackCreateNewCase {
+    width: 100%;
+
+    margin-top: 40px;
+    padding: 15px;
+
+    
+
+    border: none;
+    outline: none;
+
+    background-color: #92B7FF;
+
+    border-radius: 15px;
+
+    transition: .3s all;
+}
+
+.teacherWelcomeBackCreateNewCaseLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.teacherWelcomeBackCreateNewCase:hover {
+    opacity: .7;
+}
+
+.teacherWelcomeBackPlus {
+    width: 40px;
+    height: auto;
+
+    margin-right: 20px;
+}
+
+.teacherWelcomeBackCreateNewCaseText {
+    font-size: 25px;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.teacherMainPageColumn2 {
+    width: 35%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==== BestCase ==== */
+.bestCaseWrapper {
+    height: 40%;
+}
+.bestCase {
+    height: 100%;
+
+    background-color: #fff;
+}
+
+.bestCaseBody {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestCaseNameAndAuthor,
+.bestCaseStatistic {
+    display: flex;
+    flex-direction: column;
+}
+
+.bestCaseNameAndAuthor {
+    align-items: left;
+}
+
+.bestCaseStatistic {
+    align-items: center;
+}
+
+/* BestCase */
+.bestCaseHeader {
+    margin-bottom: 25px;
+}
+
+.bestCaseHeadline {
+    font-size: 30px;
+}
+
+.bestCaseBody {
+    background-color: #F27DC3;
+    border-radius: 15px;
+    color: #fff;
+
+    padding: 20px;
+}
+
+.bestCaseValue,
+.bestCaseName {
+    margin-bottom: 5px;
+
+    font-size: 35px;
+}
+
+.bestCaseSelebraty,
+.bestCaseAuthor {
+    font-size: 16px;
+}
+
+/* ======= AddTask ======== */
+.teacherAddTaskHeadlineWrapper {
+    margin-bottom: 20px;
+}
+
+.teacherAddTaskHeadline {
+    font-size: 25px;
+}
+
+.teacherTaskConditionsWrapper {
+    width: 80%;
+}
+
+.teacherTaskCondition {
+    resize: none;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 20px;
+
+    font-size: 16px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+    
+    overflow-y: auto;
+ 
+}
+
+.teacherTaskCondition::-webkit-scrollbar {
+    width: 4px;
+}
+.teacherTaskCondition::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.teacherTaskCondition::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.teacherTaskCondition::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.teacherTaskCondition-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.additionalConditionsHeaderWrapper {
+    margin: 15px 0;
+}
+
+.additionalConditionsHeader {
+    font-size: 20px;
+}
+
+.buttonAddConditionsLaptop {
+    display: block;
+}
+
+.buttonAddConditionsMobile {
+    display: none;
+}
+
+.plusAddTaskWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    background-color: #fff;
+}
+
+.plusAddTask {
+    width: 30px;
+    height: auto;
+}
+
+.additionalConditionsSelect {
+    position: relative;
+
+    /* max-height: 100px;
+    overflow-y: auto; */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.additionalConditionsSelect::-webkit-scrollbar {
+    width: 4px;
+}
+.additionalConditionsSelect::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsSelect::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsSelect::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.additionalConditionsSelect-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.selectConditionsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    background-color: red;
+}
+
+.selectConditionBodyMinusWrapper {
+    position: relative;
+
+    /* max-height: 80px; */
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+}
+
+.selectConditionMinusWrppaer {
+    position: absolute;
+    z-index: 100;
+    transform: translateY(-100%);
+
+    
+    width: 200px;
+
+    padding: 5px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+
+    text-align: center;
+    line-height: 23px;
+}
+
+ 
+.deleteConditionYes {
+    margin: 0 5px;
+    padding: 2px 4px;
+
+    border-radius: 4px;
+
+    transition: .3s all;
+
+    cursor: pointer;
+
+    background-color: #92B7FF;
+
+    color: #fff;
+}
+
+
+.deleteConditionYes:hover{
+    opacity: .3;
+}
+
+
+.selectConditionWrapper {
+    display: flex;
+    align-items: center;
+    
+    margin: 0 10px;
+    margin-top: 5px;
+    padding: 5px;
+
+    color: #92B7FF;
+
+    border-radius: 10px;
+
+    background-color: #fff;
+
+}
+
+.plusConditionWrapper,
+.minusConditionWrapper {
+    display: flex;
+    align-items: center;
+
+    margin-right: 5px;
+}
+
+
+
+.minusCondition,
+.plusCondition {
+    width: 25px;
+    height: auto;
+}
+
+.additionalConditionsListWrapper {
+    position: absolute;
+    z-index: 1000;
+    bottom: -10px;
+    transform: translateY(100%);
+
+    width: 100%;
+
+}
+.additionalConditionsList {
+    position: absolute;
+    z-index: 1000;
+    bottom: -10px;
+    transform: translateY(100%);
+
+    width: 30%;
+    max-height: 350px;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.additionalConditionsList::-webkit-scrollbar {
+    width: 4px;
+}
+.additionalConditionsList::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsList::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsList::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.additionalConditionsList-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.additionalConditionsListItem {
+    margin-top: 5px;
+    padding: 5px;
+
+    font-size: 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.additionalConditionsListItem:hover {
+    background-color: #DBE9FF;
+}
+
+.additionalConditionsAddDescriptionWrppaer {
+    /* position: absolute; */
+
+    width: 1200px;
+
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.additionalConditionsInputTextAndImage {
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 15px;
+    
+    padding: 20px 30px;
+
+    background-color: #fff;
+}
+
+.additionalConditionsInputText {
+    resize: none;
+
+    width: 100%;
+    height: 40px;
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 10px;
+
+    overflow-y: auto;
+}
+
+.additionalConditionsInputText::-webkit-scrollbar {
+    width: 4px;
+}
+.additionalConditionsInputText::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsInputText::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.additionalConditionsInputText::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.additionalConditionsInputText-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.additionalConditionsInputImage {
+    width: 30px;
+    height: auto;
+}
+
+.additionalConditionsSaveDescription {
+    width: 150px;
+    height: 50px;
+
+    margin-left: 40px;
+
+    font-size: 18px;
+    color: #fff;
+
+    border: none;
+    outline: none;
+    border-radius: 15px;
+
+    background-color: #92B7FF;
+
+    transition: .3s;
+}
+
+.additionalConditionsSaveDescription:hover {
+    opacity: .3;
+}
+
+.questionsTeacherWrapper {
+    margin-top: 20px;
+}
+
+.questionTeacherHeader {
+    margin: 10px 0 15px 0;
+}
+
+.questionTeacherHeadline {
+    font-size: 20px;
+}
+
+.addQuestionsTeacherWrapper {
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+
+.addQuestionsTeacherWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.addQuestionsTeacherWrapper::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.addQuestionsTeacherWrapper::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.addQuestionsTeacherWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.addQuestionsTeacherWrapper-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+
+
+.questionTeacher {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.questionsTeacherInputs {
+    width: 40%;    
+}
+
+.questionsTeacherInputWrapper,
+.questionsTeacherTextareaWrapper {
+    width: 100%;
+
+    padding: 5px 0;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.questionsTeacherTextareaWrapper {
+    margin-top: 10px;
+
+}
+
+.questionsTeacherTextareaWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.questionsTeacherInput,
+.questionsTeacherTextarea {
+    width: 100%;
+
+    padding-left: 10px;
+
+    font-size: 16px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 15px;
+}
+
+.questionsTeacherInput {
+    height: 40px;
+}
+
+.questionsTeacherTextarea {
+    height: 60px;
+
+    padding: 10px 0 10px 10px;
+    
+
+    resize: none;
+}
+
+
+.questionsTeacherTextarea::-webkit-scrollbar {
+    width: 4px;
+}
+.questionsTeacherTextarea::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.questionsTeacherTextarea::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.questionsTeacherTextarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.questionsTeacherTextarea-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+  }
+
+.questionsTeacherButtons {
+    margin-left: 20px;
+}
+
+.questionsTeacherButton {
+    margin: 0 10px;
+}
+
+.questionTeacherSave {
+    width: 200px;
+    height: 50px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+    color: #fff;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    background-color: #92B7FF;
+    
+}
+
+
+/* ==== TeacherAnalytics ===== */
+.teacherAnalytics{
+    display: flex;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+
+.TeacherAnalyticsColumn1 {
+    width: 48%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.teacherAnalyticsColumn2 {
+    width: 48%;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* === Summary === */
+.summaryAnalytycsTeacher {
+    background-color: #fff;
+
+    border-radius: 15px;
+}
+
+.summaryAnalytycsTeacherHeader {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.summaryAnalytycsTeacherHeadline {
+    font-size: 25px;
+}
+
+.summaryAnalytycsTeacherDate {
+    font-size: 20px;
+    color: #92B7FF;
+}
+
+.summaryAnalytycsTeacherData {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summaryAllPostedWrapper,
+.summaryAllDecidedWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summaryAllDecidedNumber,
+.summaryAllPostedNumber {
+    font-size: 70px;
+    color: #92B7FF;
+
+    margin-bottom: 15px;
+}
+
+.summaryAllPostedTitle,
+.summaryAllDecidedTitle {
+    font-size: 20px;
+}
+
+/* ==== DecideInWeekOrMonth ==== */
+
+.decideInWeekOrMonth {
+    margin-top: 10px;
+
+    background-color: #fff;
+}
+
+.decideInWeekOrMonthHeader {
+    margin-bottom: 40px;
+}
+
+.decideInWeekOrMonthHeadline {
+    font-size: 25px;
+}
+
+.decideInWeek,
+.decideInMonth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 0;
+
+    text-align: center;
+    color: #fff;
+
+    border-radius: 15px;
+}
+
+.decideInWeek {
+    background-color: #F27DC3;
+}
+.decideInMonth {
+    margin-top: 20px;
+
+    background-color: #878ED2;
+}
+
+.decideInWeekValue,
+.decideInMonthValue {
+    margin-right: 15px;
+
+    font-size: 40px;
+}
+
+.decideInWeekHeadline,
+.decideInMonthHeadline {
+    font-size: 28px;
+}
+
+
+
+/* ==== DIAGRAM TEACHER ==== */
+.teacherAnalitycsDiagramWrapper {
+    background-color: #fff;
+}
+
+.teacherAnalitycsDiagramHeader {
+    margin-bottom: 20px;
+}
+
+.teacherAnalitycsDiagramHeadline {
+    font-size: 25px;
+}
+
+.analyticsTeacherDiagramsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.analyticsTeacherDiagrams {
+    width: 260px !important;
+    height: 260px !important;
+}
+
+.analyticsTeacherMetricsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.analyticsTeacherMetricWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.analyticsTeacherMetricResult {
+    font-size: 65px;
+}
+
+.analyticsTeacherMetricName {
+    font-size: 20px;
+}
+
+/* ==== yourAskQuestions ==== */
+
+
+.yourAskQuestions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background-color: #fff;
+}
+
+.yourAskQuestionTextWrapper {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.yourAskQuestionText {
+    margin-bottom: 35px;
+    
+    font-size: 30px;
+}
+
+.yourAskQuestionTextCount {
+    color: #92B7FF;
+}
+
+.noAskedQuestion {
+    font-size: 22px;
+    color: #F27DC3;
+}
+
+.yourAskQuestionAsk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+    height: 50px;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+    color: #fff;
+
+    background-color: #92B7FF;
+
+    transition: .3s all;
+}
+
+.yourAskQuestionAsk:hover {
+    opacity: .3;
+}
+
+/* ===== ChangeProfile ===== */
+.changeProfileWrapper {
+    width: 100%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.changeProfile {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    max-height: 100%;
+}
+
+.changeProfileInputWrapper {
+    width: 40%;
+}
+
+.changeProfileInput {
+    width: 100%;
+    height: 55px;
+
+    margin-top: 10px;
+    padding-left: 15px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+.deleteAccount {
+    width: 40%;
+    height: 50px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+    color: #fff;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    background-color: #F45E5E;
+
+    transition: .3s;
+}
+
+.deleteAccount:hover {
+    opacity: .3;
+}
+
+.saveChangeProfile {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    transform: translateX(-80%);
+
+    font-size: 16px;
+    color: #fff;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+
+    background-color: #92B7FF;
+
+    transition: .3s;
+}
+
+.saveChangeProfile:hover {
+    opacity: .3;
+}
+
+/* ==== News ==== */
+.newsWrapper {
+    height: 100%;
+    overflow-y: auto;
+
+    padding-right: 10px;
+}
+
+.newsItem {
+    display: flex;
+    align-items: center;
+
+    margin-top: 20px;
+    padding: 0 20px;
+
+    height: 20%;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+}
+
+.newsWrapper::-webkit-scrollbar {
+    width: 4px;
+}
+.newsWrapper::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.newsWrapper::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.newsWrapper::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.newsWrapper-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.newsItemText {
+    font-size: 30px;
+}
+
+/* ==== AddModule ==== */
+
+.addModuleInputWrapper {
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+
+.addModuleInput {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+
+.addModuleName {
+    font-size: 38px;
+}
+.addModuleDescription {
+    font-size: 30px;
+}
+.addModuleTime {
+    font-size: 23px;
+}
+
+.addModuleTasksListWrapper {
+    margin-top: 30px;
+}
+
+.addModuleTasksList {
+    height: 250px;
+    overflow-y: auto;
+}
+
+.addModuleTasksList::-webkit-scrollbar {
+    width: 4px;
+}
+.addModuleTasksList::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.addModuleTasksList::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.addModuleTasksList::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.addModuleTasksList-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.addModuleTaskWrapper {
+    margin-top: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.addModuleTaskInput {
+    width: 70%;
+    height: 50px;
+
+    padding: 0 20px;
+
+    font-size: 18px;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.addModuleTaskButtons {
+    width: 27%;
+}
+
+.addModuleTaskEdit,
+.addModuleTaskDelete {
+    width: auto;
+    height: 50px;
+
+    padding: 15px;
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+    color: #fff;
+
+    transition: .3s;
+}
+
+.addModuleTaskEdit {
+    margin-right: 5px;
+    background-color: #92B7FF;
+}
+
+.addModuleTaskDelete {
+    background-color: #FF7878;
+}
+
+.addModuleTaskEdit:hover,
+.addModuleTaskDelete:hover {
+    opacity: .3;
+}
+
+.addModuleButtons {
+    display: flex;
+}
+
+.addModuleButtons {
+    margin-top: 15px;
+}
+
+.addModulePublish,
+.addModuleNotPublish,
+.addModuleAddTask {
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    outline: none;
+    border-radius: 15px;
+
+    font-size: 18px;
+    color: #fff;
+
+    background-color: #92B7FF;
+
+    transition: .3s all;
+
+}
+
+.addModulePublish:hover,
+.addModuleNotPublish:hover,
+.addModuleAddTask:hover {
+    opacity: .3;
+}
+
+.addModuleAddTask {
+    margin-right: 30px;
+
+}
+
+.addModuleNotPublish {
+    background-color: #FF7878;
 }

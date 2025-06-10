@@ -1,6 +1,6 @@
 import InspectionData from "@/components/portal/task/InspectionData";
-import "../../pageCss/page.css"
-import "../../pageCss/page.media.css"
+import "@/app/portal/pageCss/page.css"
+import "@/app/portal/pageCss/page.media.css"
 import Questions from "@/components/portal/task/Questions";
 
 export default function Task() {

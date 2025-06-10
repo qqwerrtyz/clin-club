@@ -1,5 +1,6 @@
 import Image from "next/image"
 import images_ from "../imgs"
+import Link from "next/link"
 
 export default function HeaderProfile() {
     return (
@@ -9,7 +10,9 @@ export default function HeaderProfile() {
             </div>
 
             <div className="myProfileChangeWrapper">
-                <button type="button" className="blueBg textColorWhite myProfileChange">Изменить</button>
+                <button type="button" className="blueBg textColorWhite myProfileChange">
+                    <Link style={{color: "#fff"}} href={"/portal/myprofile/change"}>Изменить</Link>
+                </button>
                 <Image className="myProfileChangePancel" src={images_.changePancel}/>
             </div>
         </div>

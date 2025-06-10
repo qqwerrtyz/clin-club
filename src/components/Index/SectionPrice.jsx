@@ -27,7 +27,7 @@ export default function SectionPrice() {
 
 
     return (
-        <div className="sectionPriseWrapper">
+        <div className="sectionPriseWrapper" id="sectionPrice">
             <div className="sectionPrise">
                 <div className="sectionPriveHeadlineWrapper">
                     <h3 className="sectionPriveHeadline">Тарифы на подписку</h3>

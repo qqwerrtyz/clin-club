@@ -11,7 +11,7 @@ export default function Header() {
                 </div>
                 <div className="headerLogoWrapper">
                     <Link href={"#"}>
-                        <Image className="headerLogo" src={logo}/>
+                        <Image alt="logo" className="headerLogo" src={logo}/>
                     </Link>
                 </div>
 
@@ -25,7 +25,7 @@ export default function Header() {
                     </button>
 
                     <div className="headerAvatarWrapper">
-                        <Image className="headerAvatar" src={avatar}/>
+                        <Image alt="headerAvatar" className="headerAvatar" src={avatar}/>
                     </div>
                 </div>
             </div>

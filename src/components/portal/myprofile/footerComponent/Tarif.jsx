@@ -9,17 +9,31 @@ export default function Tarif () {
     return (
         <div className="myProfileCol myProfileTarifWrapper">
             <div className="myProfileTarif">
-                <div className="myProfileTarifHeadlineWrapper">
-                    <h2 className="myProfileTarifHeadline">Тариф: Базовый</h2>
-                </div>
 
-                <ul className="myProfileTarifOffersWrapper">
-                    {
-                        offers.map((item, index) => {
-                            return <li key={`${item}_${index}`} className="myProfileTarifOffer">{item}</li>
-                        })
-                    }
-                </ul>
+                <div className="statisticsAndMoneyWrapper">
+                    <div className="statisticsCountMoudleWrapper">
+                        <span className="statisticsCountMoudle">Вы выложили 10 модуль и заработали</span>
+                    </div>
+
+                    <div className="statisticsMoneyWrapper">
+                        <span className="statisticsMoney">20.000 рублей</span>
+                    </div>
+
+                    <button className="cashOut">Вывести деньги</button>
+                </div>
+                {/* <div>
+                    <div className="myProfileTarifHeadlineWrapper">
+                        <h2 className="myProfileTarifHeadline">Тариф: Базовый</h2>
+                    </div>
+
+                    <ul className="myProfileTarifOffersWrapper">
+                        {
+                            offers.map((item, index) => {
+                                return <li key={`${item}_${index}`} className="myProfileTarifOffer">{item}</li>
+                            })
+                        }
+                    </ul>
+                </div> */}
             </div>
         </div>
     )

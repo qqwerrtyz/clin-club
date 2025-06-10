@@ -1,9 +1,10 @@
 "use client"
 import Image from "next/image";
-import search from "../../../../public/imgs/portal/main/search.png"
+// import search from "../../../../public/imgs/portal/main/search.png"
 import goLeft from "../../../../public/imgs/portal/main/goLeft.png"
 import Link from "next/link";
 import { useRef, useState } from "react";
+import images_ from "../imgs";
 
 export default function Welcome () {
     const indexPortalWelcomInputWrapper = useRef(null);
@@ -27,8 +28,8 @@ export default function Welcome () {
     ];
 
     return (
-        <div className="divContainer indexPortalWelcomWrapper">
-            <div className="indexPortalHelloWrapper">
+        <div className="divContainer indexPortalWelcom">
+            <div className=" indexPortalHelloWrapper">
                 <span className="textColorBlack indexPortalHello">Привет, Лиза</span>
             </div>
 
@@ -43,7 +44,7 @@ export default function Welcome () {
                 
                 <div className="indexPortalIconTextWrapper">
                     <div className="indexPortalSearchIconWrapper">
-                        <Image className="indexPortalSearchIcon" src={search}/>
+                        <Image className="indexPortalSearchIcon" src={images_.Search}/>
                     </div>
 
                     <div className="indexPortalSeatchTextWrapper">
@@ -66,7 +67,7 @@ export default function Welcome () {
                         thems.map((item, index) => {
                             return (
                                 <Link 
-                                    href={`/portal/${item.urlSlug}`}
+                                    href={`/portal/student/${item.urlSlug}`}
                                     key={`${item.urlSlug}_${index}`}
                                     className="indexPortalDropDownLink"
                                 >

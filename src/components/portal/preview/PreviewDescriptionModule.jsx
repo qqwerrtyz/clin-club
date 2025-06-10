@@ -5,7 +5,7 @@ import avatar3 from "../../../../public/imgs/portal/preview/avatar3.png"
 import grayAround from "../../../../public/imgs/portal/preview/grayAround.png"
 import Link from "next/link";
 
-export default function PreviewDescriptionModule() {
+export default function PreviewDescriptionModule({topic}) {
     return (
         <div className="previewDescriptionModule">
             <div className="previewDescriptionHeadlineWrapper">
@@ -50,7 +50,15 @@ export default function PreviewDescriptionModule() {
             </div>
 
             <button className="blueBg previewOpenTaskButtonDesctopAndMobile previewOpenTaskButton">
-                <Link href={"#"} className="textColorWhite previewOpenTaskOpen">Открыть</Link>
+                <Link 
+                    href={`/portal/student/${topic}/task`}
+                    className="textColorWhite previewOpenTaskOpen"
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center"
+                    }}
+                >Открыть</Link>
             </button>
         </div>
 
