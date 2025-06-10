@@ -1,7 +1,7 @@
 
-import "@/app/css/index.css"
-import "@/app/css/index.media.css"
 
+import "./css/index.css"
+import "./css/index.media.css"
 
 import SectionTitle from "@/components/Index/SectionTitle";
 import SectionOffers from "@/components/Index/SectionOffers";
