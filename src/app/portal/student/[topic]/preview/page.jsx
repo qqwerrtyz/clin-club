@@ -1,3 +1,5 @@
+"use client";
+     
 
 import PreviewDescriptionModule from "@/components/portal/preview/PreviewDescriptionModule"
 import "@/app/portal/pageCss/page.css"

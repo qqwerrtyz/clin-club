@@ -1,3 +1,4 @@
+"use client";
 import InspectionData from "@/components/portal/task/InspectionData";
 import "@/app/portal/pageCss/page.css"
 import "@/app/portal/pageCss/page.media.css"
