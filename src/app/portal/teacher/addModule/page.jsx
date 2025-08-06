@@ -648,9 +648,7 @@ export default function AddModule() {
                   value={t.name}
                   onChange={e => updateTaskName(idx, e.target.value)}
                 />
-                <button className="addModuleTaskEdit">
-                       <Link style={{color: "#fff"}} href={"/portal/teacher/addTask"}>Редактировать</Link>
-                    </button>
+               
                 <div className="addModuleTaskButtons">
                   <button className="addModuleTaskDelete" onClick={() => deleteTask(idx)}>Удалить</button>
                 </div>

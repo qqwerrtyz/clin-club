@@ -13,22 +13,8 @@ export default function Reg1({nextStep}) {
         // Отправка данных на сервер
         setFormData(prev => ({ ...prev, role }));
 
-        // sendRoleToServer(role);
     };
 
-    const sendRoleToServer = (role) => {
-        console.log("Выбранная роль отправлена на сервер:", role);
-        // Реальная реализация:
-        /*
-        fetch('/api/register', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ role }),
-        })
-        */
-    };
 
     // Стиль для выбранного блока
     const selectedStyle = {

@@ -6,6 +6,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import "@/app/portal/pageCss/page.css";
 import "@/app/portal/pageCss/page.media.css";
+import Link from "next/link";
 
 export default function ModuleChange() {
   const { module_pk } = useParams();
@@ -183,6 +184,9 @@ export default function ModuleChange() {
                   value={t.name}
                   onChange={e => updateTask(idx, 'name', e.target.value)}
                 />
+                 <button className="addModuleTaskEdit">
+                      <Link style={{color: "#fff"}} href={`/portal/teacher/modules/${module_pk}/tasks/${t.id}`}>Редактировать</Link>
+                  </button>
                 <div className="addModuleTaskButtons">
                   <button className="addModuleTaskDelete" onClick={() => deleteTask(idx)}>Удалить</button>
                 </div>
