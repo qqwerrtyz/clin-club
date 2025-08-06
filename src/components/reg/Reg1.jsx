@@ -1,15 +1,19 @@
 "use client"
+import { DataRegContext } from "@/app/reg/page";
 import imagesIndex from "@/components/Index/imagesIndex";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 export default function Reg1({nextStep}) {
     const [selectedRole, setSelectedRole] = useState(null);
+    const {setFormData} = useContext(DataRegContext)
     
     const selectRoleClick = (role) => {
         setSelectedRole(role);
         // Отправка данных на сервер
-        sendRoleToServer(role);
+        setFormData(prev => ({ ...prev, role }));
+
+        // sendRoleToServer(role);
     };
 
     const sendRoleToServer = (role) => {

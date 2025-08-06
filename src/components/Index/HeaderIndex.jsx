@@ -74,8 +74,10 @@ export default function HeaderIndex() {
                     </div>
 
                     <div className="headerIndexButtonWrapper">
-                        <button className="blueBg textColorWhite headerIndexSignIn">Войти</button>
-                        <button className="headerIndexReg">Регистрация</button>
+                        <Link style={{display: "flex", alignItems: "center"}} className="blueBg textColorWhite headerIndexSignIn" href={"/login"}>
+                        Войти
+                    </Link>
+                    <Link style={{display: "flex", alignItems: "center"}} className="headerIndexReg" href={"/reg"}>Регистрация</Link>
                     </div>
                 </div>
             </div>

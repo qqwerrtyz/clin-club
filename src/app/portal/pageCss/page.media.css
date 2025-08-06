@@ -869,6 +869,7 @@
     }
 
     /* ==== ChangeProfile ==== */
+    .changePhoto,
     .deleteAccount,
     .saveChangeProfile {
         padding: 15px;
@@ -877,6 +878,12 @@
         position: inherit;
         transform: none;
         width: 60%;
+    }
+
+    .changePhoto {
+        margin-top: 10px;
+        top: 0;
+        left: 0;
     }
 
     .changeProfileInputWrapper {
@@ -1082,6 +1089,10 @@
     /* TopicModule */
     .topicModuleHeadline {
         font-size: 35px;
+    }
+
+    .topicModuleItemsWrapper {
+        height: 72vh;
     }
     
     .topicModuleItem {
@@ -1661,6 +1672,18 @@
     /* =============================== */
     /* =============================== */
     /* =============================== */
+
+    .bestCaseWrapper, .calendarTeacherWrapper {
+        width: 100%;
+    }
+    .teacherModuleWrapper {
+        height: auto;
+    }
+
+    .bestCaseWrapper {
+        margin: 0;
+    }
+
     .teacherMainPage {
         flex-direction: column;
     }
@@ -1673,7 +1696,7 @@
     .teacherMainPageColumn2 {
         padding-bottom: 80px;
         height: auto;
-
+        flex-direction: column;
     }
 
     .teacherWelcomeBack {
@@ -1847,6 +1870,15 @@
   
 
     /* ==== TeacherAnalytics ==== */
+    .yourAskQuestionsWrapper,
+    .teacherAnalitycsDiagramWrapper {
+        width: 100%;
+    }
+    .yourAskQuestionsWrapper,
+    .decideInWeekOrMonthWrapper {
+        margin-top: 40px;
+    }
+
     .teacherAnalytics {
         flex-direction: column;
     }
@@ -2003,6 +2035,7 @@
         width: 100%;
     }
 
+    .changePhoto,
     .deleteAccount,
     .saveChangeProfile {
         width: 100%;
@@ -2011,12 +2044,22 @@
         font-size: 18px;
     }
 
+    .changePhoto,
     .saveChangeProfile {
         position: inherit;
         transform: none;
     }
 
+    .changePhoto {
+        margin-top: 10px;
+        top: 0;
+        left: 0;
+    }
+
     /* ==== News ==== */
+    .newsWrapper {
+        height: 95%;
+    }
     .newsItemText {
         font-size: 20px;
     }
@@ -2076,4 +2119,35 @@
         width: 150px;
     }
 
+    /* CHATS */
+    .bodyChatWrapper {
+        margin-bottom: 5px;
+    }
+    .chats {
+        position: absolute;
+        width: 90%;
+        z-index: 2;
+    }
+
+    .chatsHeaderWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chatsCross {
+        display: inline;
+
+        width: 20px;
+        height: 20px;
+    }
+    .chatBurger {
+        display: inline;
+        position: absolute;
+        z-index: 0;
+        left: 25px;
+
+        width: 30px;
+        height: 27px;
+    }
 }

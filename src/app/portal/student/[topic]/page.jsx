@@ -3,8 +3,25 @@ import Link from "next/link";
 import { use, useEffect } from "react"
 import "@/app/portal/pageCss/page.css"
 import "@/app/portal/pageCss/page.media.css"
-
+import { useRouter } from "next/navigation";
 export default function TopicModule({params}) {
+    const router = useRouter();
+
+    useEffect(() => {
+        // Проверяем роль пользователя
+        const role = localStorage.getItem("role");
+        if (role !== "student") {
+        router.push("/");
+        return;
+        }
+
+        // Инициализируем nameModule, если ещё нет
+        if (!localStorage.getItem("nameModule")) {
+        localStorage.setItem("nameModule", "");
+        }
+    }, [router]);
+    
+
     const { topic } = use(params);
 
     const example = {

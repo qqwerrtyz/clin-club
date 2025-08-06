@@ -7,10 +7,27 @@ import Image from "next/image"
 import Reg2 from "@/components/reg/Reg2"
 import Reg3 from "@/components/reg/Reg3"
 import Reg4 from "@/components/reg/Reg4"
-import { useRef, useState } from "react"
-import ProgressReg from "@/components/reg/ProgressReg"
+import { createContext, useRef, useState } from "react"
+import ProgressReg from "@/components/reg/ProgressReg";
+
+export const DataRegContext = createContext()
 export default function Reg() {
     const regCarouselRef = useRef(null) 
+
+    const [formData, setFormData] = useState({
+        role: null,
+        first_name: '',
+        last_name: '',
+        patronymic: '',
+        birth_date: '',
+        phone: '',
+        email: '',
+        city: '',
+        work_place: '',
+        specialization: '',
+        password: ""
+    });
+
 
     const [offsettStep, setOffsetStep] = useState(0)
 
@@ -28,18 +45,23 @@ export default function Reg() {
         })
     }
 
+
+
     return (
         <div className="regWrapper">
+            <button onClick={() => console.log(formData)}>dvdvdv</button>
             <div className="regLogoWrapper">
                 <Image className="regLogo" src={imagesIndex.logo}/>
             </div>
             <div className="regCarouselWrapper">
-                <div ref={regCarouselRef} className="regCarousel">
-                    <Reg1 nextStep={offsetCarouselNext}/>
-                    <Reg2 nextStep={offsetCarouselNext}/>
-                    <Reg3 nextStep={offsetCarouselNext}/>
-                    <Reg4 />
-                </div>
+                <DataRegContext.Provider value={{ formData, setFormData }}>
+                    <div ref={regCarouselRef} className="regCarousel">
+                        <Reg1 nextStep={offsetCarouselNext}/>
+                        <Reg2 nextStep={offsetCarouselNext}/>
+                        <Reg3 nextStep={offsetCarouselNext}/>
+                        <Reg4 />
+                    </div>
+                </DataRegContext.Provider>
             </div>
 
             <ProgressReg offsettStep={offsettStep} />

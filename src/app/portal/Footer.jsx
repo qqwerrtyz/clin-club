@@ -6,6 +6,7 @@ import settings from "../../../public/imgs/portal/footer/settings.png"
 import chat from "../../../public/imgs/portal/footer/chat.png"
 import Link from "next/link";
 
+
 export default function Footer() {
 
 
@@ -14,7 +15,7 @@ export default function Footer() {
             <div className="footer">
                 <div className="footerIconWrapper">
                    {/* <Link href={"/portal/student"}><Image className="footerIcon" alt="profile" src={profile}/></Link> */}
-                   <Link href={"/portal/teacher"}><Image className="footerIcon" alt="profile" src={profile}/></Link>
+                   <Link href={`/portal/${localStorage.getItem("role")}`}><Image className="footerIcon" alt="profile" src={profile}/></Link>
                 </div>
 
                 <div className="footerIconWrapper">
@@ -22,7 +23,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footerIconWrapper">
-                   <Link href={"/portal/student/analytics"}><Image className="footerIcon" alt="analitics" src={analitics}/></Link>
+                   <Link href={`/portal/${localStorage.getItem("role")}/analytics`}><Image className="footerIcon" alt="analitics" src={analitics}/></Link>
                    {/* <Link href={"/portal/teacher/analytics"}><Image className="footerIcon" alt="analitics" src={analitics}/></Link> */}
                 </div>
 

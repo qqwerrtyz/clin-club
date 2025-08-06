@@ -719,10 +719,33 @@
         width: 100%;
     }
 
+    .ourCitiesWrapper {
+        width: 100%;
+    }
+
+    .ourCity {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .inputCities,
     .regInput {
         height: 50px;
 
         font-size: 16px;
     }
+
+    .ourSpecializationsWrapper {
+        margin-top: 20px;
+
+
+    }
+
+    .ourSpecializations {
+        max-height: 200px;
+        overflow: auto;
+    }
+
+
 }
 

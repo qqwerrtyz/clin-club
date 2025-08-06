@@ -7,9 +7,26 @@ import EveryDayPractic from "@/components/portal/main/EveryDayPractic"
 import LeadersBoard from "@/components/portal/main/LeadersBoard"
 import Calendar from "@/components/portal/main/Calendar"
 import { useEffect } from "react"
-
+import { useRouter } from "next/navigation"
 
 export default function PortalStudent() {
+    const router = useRouter();
+
+    useEffect(() => {
+        // Проверяем роль пользователя
+        const role = localStorage.getItem("role");
+        if (role !== "student") {
+        router.push("/");
+        return;
+        }
+
+        // Инициализируем nameModule, если ещё нет
+        if (!localStorage.getItem("nameModule")) {
+        localStorage.setItem("nameModule", "");
+        }
+    }, [router]);
+    
+
       useEffect(() => {
             // Добавляем ключ nameModule в localStorage если его нет
             let nameModule = localStorage.getItem("nameModule");
@@ -17,11 +34,7 @@ export default function PortalStudent() {
             if (!nameModule) {
                 localStorage.setItem("nameModule", "");
             }
-    
-            
-    
-            
-        }, []) // Этот хук вытащим врегистрацию
+        }, []) // Этот хук вытащим в регистрацию
     return (
         <>
             

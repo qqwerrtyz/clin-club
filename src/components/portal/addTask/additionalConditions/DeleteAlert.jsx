@@ -6,9 +6,9 @@ export default function DeleteAlert({item, setShowAlert}) {
 
     function deleteElem() {
         // Добавляем item снова в список не выбранных элементов
-        setListConditions(prev => {
-            return [...prev, item]
-        })
+        // setListConditions(prev => {
+        //     return [...prev, item]
+        // })
 
         // Удаляем item из списка выбранных элементов
         setSelectConditions(prev => {

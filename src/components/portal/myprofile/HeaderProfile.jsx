@@ -13,7 +13,10 @@ export default function HeaderProfile() {
                 <button type="button" className="blueBg textColorWhite myProfileChange">
                     <Link style={{color: "#fff"}} href={"/portal/myprofile/change"}>Изменить</Link>
                 </button>
-                <Image className="myProfileChangePancel" src={images_.changePancel}/>
+                
+                <Link href={"/portal/myprofile/change"}>
+                    <Image className="myProfileChangePancel" src={images_.changePancel}/>
+                </Link>
             </div>
         </div>
     )

@@ -1012,7 +1012,7 @@
 
 .taskSendWrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     margin-top: 30px;
 }
@@ -2953,6 +2953,7 @@
     opacity: .3;
 }
 
+.changePhoto,
 .saveChangeProfile {
     position: absolute;
     top: 10px;
@@ -2973,6 +2974,12 @@
     transition: .3s;
 }
 
+.changePhoto {
+    top: 60px;
+    right: 90px;
+}
+
+.changePhoto:hover,
 .saveChangeProfile:hover {
     opacity: .3;
 }
@@ -2987,10 +2994,13 @@
 
 .newsItem {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    overflow: auto;
 
     margin-top: 20px;
-    padding: 0 20px;
+    padding:20px;
 
     height: 20%;
 
@@ -2999,23 +3009,31 @@
     background-color: #fff;
 }
 
+
+
+.newsItem::-webkit-scrollbar,
 .newsWrapper::-webkit-scrollbar {
     width: 4px;
 }
+
+.newsItem::-webkit-scrollbar-track,
 .newsWrapper::-webkit-scrollbar-track {
     background: #BFD5FF; /* Цвет фона трека */
     border-radius: 4px;
 }
 
+.newsItem::-webkit-scrollbar-thumb,
 .newsWrapper::-webkit-scrollbar-thumb {
     background: #fff; /* Цвет фона трека */
     border-radius: 4px;
 }
 
+.newsItem::-webkit-scrollbar-thumb:hover,
 .newsWrapper::-webkit-scrollbar-thumb:hover {
     background: #555; /* Цвет при наведении */
 }
 
+.newsItem-scroll,
 .newsWrapper-scroll {
     scrollbar-width: 4px; /* "auto" | "thin" | "none" */
     scrollbar-color: #fff #BFD5FF; /* thumb track */
@@ -3032,6 +3050,16 @@
 
     margin-top: 20px;
 
+}
+
+.disc-dropdown {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.addModuleTime {
+    display: flex;
+    align-items: center;
 }
 
 .addModuleInput {

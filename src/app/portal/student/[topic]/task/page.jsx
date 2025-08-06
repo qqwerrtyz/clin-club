@@ -2,8 +2,27 @@ import InspectionData from "@/components/portal/task/InspectionData";
 import "@/app/portal/pageCss/page.css"
 import "@/app/portal/pageCss/page.media.css"
 import Questions from "@/components/portal/task/Questions";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
 
 export default function Task() {
+    const router = useRouter();
+
+    useEffect(() => {
+        // Проверяем роль пользователя
+        const role = localStorage.getItem("role");
+        if (role !== "student") {
+        router.push("/");
+        return;
+        }
+
+        // Инициализируем nameModule, если ещё нет
+        if (!localStorage.getItem("nameModule")) {
+        localStorage.setItem("nameModule", "");
+        }
+    }, [router]);
+    
     return (
         <div className="taskWrapper">
             <div className="tas">

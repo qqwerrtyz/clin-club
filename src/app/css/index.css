@@ -722,10 +722,58 @@
 }
 
 /* INPUT REG */
+.ourCitiesWrapper,
 .regInputWrapper {
     width: 500px;
 
     margin-top: 20px;
+}
+
+.ourSpecializationsWrapper {
+
+    margin-top: 20px;
+    
+    background-color: #fff;
+
+    padding: 20px;
+    
+    border-radius: 15px;
+}
+
+.ourSpecializations {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.ourSpecializations::-webkit-scrollbar {
+    width: 4px;
+}
+.ourSpecializations::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.ourSpecializations::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.ourSpecializations::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.ourSpecializations-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.inputSpecializations,
+.inputCities {
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 15px;
+    color: #757575;
+    cursor: pointer;
 }
 
 .regInput {
@@ -739,6 +787,10 @@
     border: none;
     border-radius: 15px;
     outline: none;
+}
+
+.ourCitiesWrapper {
+
 }
 
 /* Button reg */
@@ -759,6 +811,51 @@
     background-color: #92B7FF;
 
     transition: .3s all;
+}
+
+/* outCities */
+.ourCities {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    height: 200px;
+    overflow-y: auto;
+
+    font-size: 20px;
+
+    background-color: #fff;
+
+    border-radius: 15px;
+}
+
+.ourCities::-webkit-scrollbar {
+    width: 4px;
+}
+.ourCities::-webkit-scrollbar-track {
+    background: #BFD5FF; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.ourCities::-webkit-scrollbar-thumb {
+    background: #fff; /* Цвет фона трека */
+    border-radius: 4px;
+}
+
+.ourCities::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Цвет при наведении */
+}
+
+.ourCities-scroll {
+    scrollbar-width: 4px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #fff #BFD5FF; /* thumb track */
+}
+
+.ourCity {
+    cursor: pointer;
+
+    margin: 10px 0;
 }
 
 .regEndSend:hover,

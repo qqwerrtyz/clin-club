@@ -4,17 +4,21 @@ import { useContext } from "react"
 import { AdditionalConditionsContext } from "./AdditionalConditions"
 
 export default function ButtonAddConditions() {
-    const {listConditions, setIsOpenList} = useContext(AdditionalConditionsContext)
+    const { 
+        hasAvailableConditions, 
+        setIsOpenList 
+    } = useContext(AdditionalConditionsContext);
+    
     return (
-        // Кнопка добавление доп условия исечазает, когда ВСЕ доп условия выбраны
-        listConditions.length !== 0 && (
+        // Кнопка отображается только если есть доступные условия
+        hasAvailableConditions && (
             <button
-                className="plusAddTaskWrapper">
+                className="plusAddTaskWrapper"
+                onClick={() => setIsOpenList(prev => !prev)}>
                 <Image
                     alt="plus"
                     src={images_.PlusAddTask}
                     className="plusAddTask"
-                    onClick={() => setIsOpenList(prev => !prev)}
                 />
             </button>
         )
